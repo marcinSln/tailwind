@@ -20,9 +20,9 @@ export class Header extends Component {
 	render() {
 		return (
 			<div className="mx-5 flex lg:mx-20 md:mx-10 ">
-				<div className="flex-1 flex">
+				<div className="flex-1  flex xl:flex-1 md:flex-none">
 					<h1 className="text-6xl text-white pt-1 xl:text-8xl"> Porfolio </h1>
-					<div className="flex z-10">
+					<div className="flex z-10 w-full">
 						<img src={backgroundImage} className="hidden xl:block" alt="" />
 					</div>
 				</div>
@@ -33,7 +33,7 @@ export class Header extends Component {
 					{this.state.isOpen ? <FaTimes /> : <FaBars />}
 				</div>
 				<div
-					className={`flex flex-2 items-center  ${this.state.isOpen
+					className={`flex flex-1 items-center  ${this.state.isOpen
 						? 'flex flex-col fixed l-0 bg-blue-dark bg-opacity-90 min-h-screen justify-center top-0 w-full'
 						: 'hidden'} md:flex md:items-start md:h-auto md:min-h-0 md:h-full md:w-8/12 md:justify-end md:relative md:flex-row`}
 				>

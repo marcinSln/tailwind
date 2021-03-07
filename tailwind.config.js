@@ -45,7 +45,9 @@ module.exports = {
 				red: '#FF0513'
 			},
 			backgroundColor: {
-				red: '#FF0513'
+				red: '#FF0513',
+				darkBlue: '#040221',
+				navyBlue: '#0E0C38'
 			}
 		}
 	},
