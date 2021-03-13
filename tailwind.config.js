@@ -48,6 +48,17 @@ module.exports = {
 				red: '#FF0513',
 				darkBlue: '#040221',
 				navyBlue: '#0E0C38'
+			},
+			keyframes: {
+				wiggle: {
+					'0%': { transform: 'scale(1.25)' },
+					'25%': { transform: 'scale(1)' },
+					'50%': { transform: 'scale(1.1)' },
+					'100%': { transform: 'scale(1)' }
+				}
+			},
+			animation: {
+				wiggle: 'wiggle .5s ease-in-out 1'
 			}
 		}
 	},

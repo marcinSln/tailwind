@@ -2,6 +2,7 @@ import React from 'react';
 import { Header } from './Components/Header';
 import { Baner } from './Components/Baner';
 import { Wrapper } from './Components/Wrapper';
+import TabsContainer from './Components/Tabs/TabsContainer';
 import { Section } from './Components/Section';
 import { SectionWithHeader } from './Components/SectionWithHeader';
 import { ImageWithBorder } from './Components/ImageWithBorder';
@@ -18,7 +19,7 @@ export default function App() {
 				<Header />
 				<Baner />
 
-				<Section>
+				<Section className="bg-darkBlue pt-20 pb-16 lg:pt-48 lg:pb-36">
 					<Wrapper isRow="true" className="items-start flex-wrap md:flex-nowrap">
 						<SectionWithHeader
 							textHeader="About Me"
@@ -32,6 +33,20 @@ export default function App() {
 							className="w-full mb-10 md:w-6/12 xl:w-1/2 md:mb-0"
 						/>
 						<ImageWithBorder image={aboutMeImg} className="w-full max-w-2xl md:w-6/12 xl:w-1/2" />
+					</Wrapper>
+				</Section>
+				<Section className="bg-darkBlue pt-8  pb-24 lg:pt-8 lg:pb-32 ">
+					<Wrapper isRow="false" className="items-start flex-wrap">
+						<div className="w-full  md:w-6/12 md:w-auto">
+							<h2 className="font-bold text-center text-white text-4xl lg:text-6xl md:text-left relative">
+								Portfolio
+								<span className="border-b border-red -right-40  w-7/12 md:right-20 flex absolute h-1 top-1/2 transform -translate-y-1/2  md:w-4/12">
+									&nbsp;
+								</span>
+							</h2>
+						</div>
+						<div className="w-6/12 w-auto" />
+						<TabsContainer />
 					</Wrapper>
 				</Section>
 			</div>
