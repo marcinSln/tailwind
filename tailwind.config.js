@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors');
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
 	purge: [ './src/**/*.{js,jsx,ts,tsx}', './public/index.html' ],
@@ -20,6 +21,10 @@ module.exports = {
 			contain: 'contain',
 			'50%': '50%',
 			'16': '4rem'
+		},
+		screens: {
+			xs: '500px',
+			...defaultTheme.screens
 		},
 		extend: {
 			spacing: {

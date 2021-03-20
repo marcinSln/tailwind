@@ -8,9 +8,14 @@ import { SectionWithHeader } from './Components/SectionWithHeader';
 import { ImageWithBorder } from './Components/ImageWithBorder';
 import './App.css';
 import { BrowserRouter } from 'react-router-dom';
+import { TextHeader } from './Components/TextHeader';
+import { Text } from './Components/Text';
+import { Skill } from './Components/Skill';
 
 //images
 import aboutMeImg from './img/about.svg';
+import worldWide from './img/worldwide.svg';
+import skillItem from './img/item.svg';
 
 export default function App() {
 	return (
@@ -47,6 +52,73 @@ export default function App() {
 						</div>
 						<div className="w-6/12 w-auto" />
 						<TabsContainer />
+					</Wrapper>
+				</Section>
+				<Section className="pt-12 pb-24 md:pt-24 md:pb-52">
+					<Wrapper className="items-start">
+						<TextHeader text="My Capabilities" level="2" lineType="underline" />
+						<Text
+							color="white"
+							size="3xl"
+							align="center"
+							text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+						incididunt ut labore et t enim ad minim veniam, quis nostrud exercitation."
+						/>
+						<Section className="py-5 grid gap-x-3 gap-y-16 justify-items-center sm:grid-cols-2  md:grid-cols-3 lg:gap-y-32 lg:gap-x-6 xs:gap-x-3 xs:grid-cols-2">
+							<Skill
+								textHeader="Web Design"
+								text="Get awesome design services from inkyy.com "
+								image={skillItem}
+							/>
+							<Skill
+								textHeader="Web Design"
+								text="Get awesome design services from inkyy.com "
+								image={skillItem}
+							/>
+							<Skill
+								textHeader="Web Design"
+								text="Get awesome design services from inkyy.com "
+								image={skillItem}
+							/>
+							<Skill
+								textHeader="Web Design"
+								text="Get awesome design services from inkyy.com "
+								image={skillItem}
+							/>
+							<Skill
+								textHeader="Web Design"
+								text="Get awesome design services from inkyy.com "
+								image={skillItem}
+							/>
+							<Skill
+								textHeader="Web Design"
+								text="Get awesome design services from inkyy.com "
+								image={skillItem}
+							/>
+						</Section>
+					</Wrapper>
+				</Section>
+				<Section className="bg-darkBlue  pt-12 pb-12 md:pt-24 md:pb-52">
+					<Wrapper>
+						<TextHeader text="What My Client Says" level="2" lineType="underline" />
+						<Text
+							color="white"
+							size="3xl"
+							align="center"
+							text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
+							ut labore et t enim ad minim veniam, quis nostrud exercitation."
+						/>
+						<Section className="flex-col items-center justify-center gap-x-12 md:flex md:flex-row lg:gap-x-24">
+							<img src={worldWide} alt="" className="w-full md:w-1/2" />
+							<Text
+								align="left"
+								size="3xl"
+								lineHeight="leading-loose"
+								text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+								laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto 
+								beatae vitae dicta sunt is the most explicabo. "
+							/>
+						</Section>
 					</Wrapper>
 				</Section>
 			</div>

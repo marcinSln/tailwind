@@ -12,6 +12,8 @@ export const tabsHeader = [
 	{ name: 'Mobile Apps', isActive: false }
 ];
 
+const a = { test: 'aa', test: '2' };
+
 export const tabsContent = [
 	{
 		name: 'All',
