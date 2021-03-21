@@ -12,6 +12,13 @@ export const tabsHeader = [
 	{ name: 'Mobile Apps', isActive: false }
 ];
 
+export const OptionContactForm = [
+	{ name: '100', value: 100 },
+	{ name: '1000', value: 1000 },
+	{ name: '2000', value: 2000 },
+	{ name: '5000', value: 5000 }
+];
+
 const a = { test: 'aa', test: '2' };
 
 export const tabsContent = [

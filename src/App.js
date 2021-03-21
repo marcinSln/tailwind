@@ -11,6 +11,13 @@ import { BrowserRouter } from 'react-router-dom';
 import { TextHeader } from './Components/TextHeader';
 import { Text } from './Components/Text';
 import { Skill } from './Components/Skill';
+import { FormHandler } from './Components/FormHandler';
+import { InputField } from './Components/InputField';
+
+import { Link } from 'react-router-dom';
+
+// config
+import { OptionContactForm } from './Config/Config';
 
 //images
 import aboutMeImg from './img/about.svg';
@@ -108,8 +115,8 @@ export default function App() {
 							text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
 							ut labore et t enim ad minim veniam, quis nostrud exercitation."
 						/>
-						<Section className="flex-col items-center justify-center gap-x-12 md:flex md:flex-row lg:gap-x-24">
-							<img src={worldWide} alt="" className="w-full md:w-1/2" />
+						<Section className="flex-col items-center justify-center gap-x-12 mt-10  lg:mt-20 md:flex md:flex-row lg:gap-x-24">
+							<img src={worldWide} alt="" className="w-full md:w-1/2 inline-block mb-10 md:-ml-5" />
 							<Text
 								align="left"
 								size="3xl"
@@ -119,6 +126,38 @@ export default function App() {
 								beatae vitae dicta sunt is the most explicabo. "
 							/>
 						</Section>
+					</Wrapper>
+				</Section>
+				<Section className="pb-24 ">
+					<Wrapper>
+						<TextHeader
+							text="Let’s Make Something </br> Great Together"
+							level="2"
+							lineType="vertical-above"
+							spaceBetween="mb-14"
+						/>
+						<Text
+							align="center"
+							className="max-w-4xl mx-auto leading-loose"
+							lineHeight="leading-loose"
+							text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+								sed do eiusmod tempor incididunt ut labore et t enim ad minim veniam, 
+								quis nostrud exercitation."
+						/>
+						<FormHandler className="max-w-6xl mx-auto text-center">
+							<div className="gap-y-6 grid-cols-1 grid md:grid-cols-2 md:gap-x-6">
+								<InputField typeOfElement="input" type="text" name="Name" />
+								<InputField typeOfElement="input" type="email" name="Email" />
+								<InputField typeOfElement="input" type="phone" name="Phone#" />
+								<InputField typeOfElement="select" type="" name="Budget" options={OptionContactForm} />
+							</div>
+							<InputField typeOfElement="textarea" type="" name="Message" />
+							<input
+								type="submit"
+								value="Hire me"
+								className="bg-red transition duration-300 ease-in-out  rounded-full text-white px-4 py-2  hover:bg-warning-800"
+							/>
+						</FormHandler>
 					</Wrapper>
 				</Section>
 			</div>
