@@ -13,6 +13,7 @@ import { Text } from './Components/Text';
 import { Skill } from './Components/Skill';
 import { FormHandler } from './Components/FormHandler';
 import { InputField } from './Components/InputField';
+import { FaBehance, FaDribbble, FaInstagram, FaLinkedin, FaPinterest } from 'react-icons/fa';
 
 import { Link } from 'react-router-dom';
 
@@ -159,6 +160,58 @@ export default function App() {
 							/>
 						</FormHandler>
 					</Wrapper>
+				</Section>
+				<Section className="pb-12 bg-darkBlue  md:pb-24">
+					<Wrapper>
+						<TextHeader text="Portfolio" level="2" lineType="vertical-above" spaceBetween="mb-14" />
+						<div className="row flex divide-x-2 divide-white justify-center py-2 pt-3 md:pt-6">
+							<Link className="text-white text-base px-1 font-medium" to="">
+								About
+							</Link>
+							<Link className="text-white text-base px-1 font-medium" to="">
+								Portfolio
+							</Link>
+							<Link className="text-white text-base px-1 font-medium" to="">
+								Kontakt
+							</Link>
+						</div>
+
+						<div className="row flex divide-x-2 divide-white justify-center py-2 pb-3 md:pb-6">
+							<span className="text-white text-base px-1 font-medium" to="">
+								NY
+							</span>
+							<a className="text-white text-base px-1 font-medium" href="tel:538756519">
+								538 756 519
+							</a>
+							<a
+								className="text-white text-base px-1 font-medium"
+								href="mailto:marcin.smolen.774@gmail.com"
+							>
+								marcin.smolen.774@gmail.com
+							</a>
+						</div>
+
+						<div className="py-4  gap-x-4 flex justify-center">
+							<Link to="#" className="text-white text-4xl ">
+								<FaBehance />
+							</Link>
+							<Link to="#" className="text-white text-4xl">
+								<FaDribbble />
+							</Link>
+							<Link to="#" className="text-white text-4xl">
+								<FaInstagram />
+							</Link>
+							<Link to="#" className="text-white text-4xl">
+								<FaLinkedin />
+							</Link>
+							<Link to="#" className="text-white text-4xl">
+								<FaPinterest />
+							</Link>
+						</div>
+					</Wrapper>
+				</Section>
+				<Section className="bg-darkBlue py-7 border-grray border-t-1 justify-center flex md:py-14">
+					<span className="text-white text-base">Copyright © 2019 Graphics Studio | All rights reserved</span>
 				</Section>
 			</div>
 		</BrowserRouter>

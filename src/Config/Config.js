@@ -19,7 +19,11 @@ export const OptionContactForm = [
 	{ name: '5000', value: 5000 }
 ];
 
-const a = { test: 'aa', test: '2' };
+export const email = {
+	ServiceID: 'service_dgvvi59',
+	TemplateID: 'template_mlroj99',
+	userID: 'user_wTVrRHWB5JEUqAgB7GOX6'
+};
 
 export const tabsContent = [
 	{

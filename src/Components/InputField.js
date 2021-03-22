@@ -4,7 +4,7 @@ export function InputField({ options, typeOfElement = 'input', type = 'text', na
 	return typeOfElement === 'input' ? (
 		<input name={name} className="py-4 px-4 placeholder-gray" type={type} placeholder={name} />
 	) : typeOfElement === 'select' ? (
-		<select className="py-4 px-4 placeholder-gray text-gray ">
+		<select className="py-4 px-4 placeholder-gray text-gray " name={name}>
 			{options.map((item) => {
 				{
 					return (
