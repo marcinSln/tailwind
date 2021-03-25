@@ -35,6 +35,15 @@ module.exports = {
 			...defaultTheme.screens
 		},
 		extend: {
+			fontFamily: {
+				sans: [ 'Helvetica', 'Arial', 'sans-serif' ],
+				logo: [ 'FREESCPT' ],
+				text: [ 'Poppins' ]
+			},
+			fontSize: {
+				xl: '1.34rem',
+				'9xl': '7rem'
+			},
 			spacing: {
 				'1': '8px',
 				'2': '12px',
@@ -54,16 +63,13 @@ module.exports = {
 					dark: '#0E0C38'
 				}
 			},
-			backgroundImage: (theme) => ({
-				elipse: "url('/src/img/ellipse.png')"
-			}),
 			borderColor: {
 				red: '#FF0513'
 			},
 			backgroundColor: {
 				red: '#FF0513',
 				darkBlue: '#040221',
-				navyBlue: '#0E0C38'
+				navyBlue: '#050435'
 			},
 			keyframes: {
 				wiggle: {

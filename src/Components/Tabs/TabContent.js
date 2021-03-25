@@ -17,7 +17,7 @@ export default function TabContent({ children }) {
 								200} cursor-pointer transition-all duration-300`}
 						>
 							<div className="transition-all duration-300 overflow-hidden rounded-3xl transform-gpu relative hover:scale-y-110">
-								<img src={el.src} />
+								<img src={el.src} alt={el.header} />
 								<span className="h-full w-full bg-red absolute top-0 left-0 opacity-0 transition-all duration-300 group-hover:opacity-80" />
 							</div>
 							{el.header || el.text ? (

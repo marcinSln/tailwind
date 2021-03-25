@@ -1,4 +1,3 @@
-import backgroundImage from '../img/background.png';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
@@ -19,11 +18,11 @@ export class Header extends Component {
 
 	render() {
 		return (
-			<div className="mx-5 flex lg:mx-20 md:mx-10 ">
+			<div className="px-4 flex lg:px-16 md:px-10 fixed max-w-full w-full">
 				<div className="flex-1  flex xl:flex-1 md:flex-none">
-					<h1 className="text-6xl text-white pt-1 xl:text-8xl"> Porfolio </h1>
+					<h1 className="font-logo text-5xl text-white pt-1 xl:text-8xl tracking-tight"> Portfolio </h1>
 					<div className="flex z-10 w-full">
-						<img src={backgroundImage} className="hidden xl:block" alt="" />
+						{/* <img src={backgroundImage} className="hidden xl:block" alt="Porfolio" /> */}
 					</div>
 				</div>
 				<div
@@ -59,10 +58,7 @@ export class Header extends Component {
 						</div>
 					</div>
 					<div className="h-10 z-10 mx-2 flex items-center mt-1 xl:mt-9 lg:h-16">
-						<Link
-							to="#"
-							className="border bg-transparent border-white rounded-full text-white px-2 py-1 lg:px-4 lg:py-2  hover:text-blue-dark hover:bg-white"
-						>
+						<Link to="#" className="btn btn--transparent">
 							Get started
 						</Link>
 					</div>

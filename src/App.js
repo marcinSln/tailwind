@@ -28,7 +28,7 @@ import skillItem from './img/item.svg';
 export default function App() {
 	return (
 		<BrowserRouter>
-			<div className="bg-blue-dark  min-h-screen">
+			<div className="bg-navyBlue  min-h-screen">
 				<Header />
 				<Baner />
 
@@ -117,7 +117,11 @@ export default function App() {
 							ut labore et t enim ad minim veniam, quis nostrud exercitation."
 						/>
 						<Section className="flex-col items-center justify-center gap-x-12 mt-10  lg:mt-20 md:flex md:flex-row lg:gap-x-24">
-							<img src={worldWide} alt="" className="w-full md:w-1/2 inline-block mb-10 md:-ml-5" />
+							<img
+								src={worldWide}
+								alt="What My Client Says"
+								className="w-full md:w-1/2 inline-block mb-10 md:-ml-5"
+							/>
 							<Text
 								align="left"
 								size="3xl"
@@ -153,11 +157,7 @@ export default function App() {
 								<InputField typeOfElement="select" type="" name="Budget" options={OptionContactForm} />
 							</div>
 							<InputField typeOfElement="textarea" type="" name="Message" />
-							<input
-								type="submit"
-								value="Hire me"
-								className="bg-red transition duration-300 ease-in-out  rounded-full text-white px-4 py-2  hover:bg-warning-800"
-							/>
+							<input type="submit" value="Hire me" className="btn btn--red btn--rounded" />
 						</FormHandler>
 					</Wrapper>
 				</Section>
