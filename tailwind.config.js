@@ -40,15 +40,20 @@ module.exports = {
 				logo: [ 'FREESCPT' ],
 				text: [ 'Poppins' ]
 			},
+
 			fontSize: {
 				xl: '1.34rem',
 				'9xl': '7rem'
+			},
+			height: {
+				'21': '5.6rem'
 			},
 			spacing: {
 				'1': '8px',
 				'2': '12px',
 				'3': '16px',
 				'4': '24px',
+				'4.5': '30px',
 				'5': '32px',
 				'6': '48px'
 			},

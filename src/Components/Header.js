@@ -36,29 +36,38 @@ export class Header extends Component {
 						? 'flex flex-col fixed l-0 bg-blue-dark bg-opacity-90 min-h-screen justify-center top-0 w-full'
 						: 'hidden'} md:flex md:items-start md:h-auto md:min-h-0 md:h-full md:w-8/12 md:justify-end md:relative md:flex-row`}
 				>
-					<div className="h-14 z-10 mx-0 border-b-2 justify-end  border-transparent xl:h-28 xl:mx-2 hover:border-red ">
-						<div className="transition duration-300 ease-in-out pt-0 xl:pt-8 hover:bg-red flex items-end">
-							<Link to="#" className="text-white  flex font-bold py-2 px-4 lg:py-4 lg:px-4">
+					<div className="h-14 z-10 border-b-1 justify-end  border-transparent xl:h-21 hover:border-red ">
+						<div className="transition duration-300 ease-in-out hover:bg-red flex items-end">
+							<Link
+								to="#"
+								className="text-white text flex tracking-wide font-medium py-2 px-4 lg:pt-6 lg:pb-2 lg:px-4"
+							>
 								About
 							</Link>
 						</div>
 					</div>
-					<div className="h-14 z-10  mx-0 border-b-2  border-transparent xl:h-28 xl:mx-2 hover:border-red ">
-						<div className="transition duration-300 ease-in-out pt-0 xl:pt-8 hover:bg-red flex items-end">
-							<Link to="#" className="text-white  flex font-bold py-2 px-4 lg:py-4 lg:px-4">
+					<div className="h-14 z-10  border-b-1 justify-end  border-transparent xl:h-21 hover:border-red ">
+						<div className="transition duration-300 ease-in-out hover:bg-red flex items-end">
+							<Link
+								to="#"
+								className="text-white text flex tracking-wide font-medium py-2 px-4 lg:pt-6 lg:pb-2 lg:px-4"
+							>
 								Portfolio
 							</Link>
 						</div>
 					</div>
-					<div className="h-14 z-10  mx-0 border-b-2  border-transparent xl:h-28 xl:mx-2 hover:border-red">
-						<div className="transition duration-300 ease-in-out pt-0 xl:pt-8 hover:bg-red flex items-end">
-							<Link to="#" className="text-white  flex font-bold py-2 px-4 lg:py-4 lg:px-4">
+					<div className="h-14 z-10 border-b-1 justify-end  border-transparent xl:h-21 hover:border-red ">
+						<div className="transition duration-300 ease-in-out hover:bg-red flex items-end">
+							<Link
+								to="#"
+								className="text-white text flex tracking-wide font-medium py-2 px-4 lg:pt-6 lg:pb-2 lg:px-4"
+							>
 								Contact
 							</Link>
 						</div>
 					</div>
-					<div className="h-10 z-10 mx-2 flex items-center mt-1 xl:mt-9 lg:h-16">
-						<Link to="#" className="btn btn--transparent">
+					<div className="h-10 z-10 flex items-center mt-0 xl:mt-9 lg:h-12">
+						<Link to="#" className="btn btn--small  btn--transparent">
 							Get started
 						</Link>
 					</div>

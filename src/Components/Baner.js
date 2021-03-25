@@ -5,7 +5,7 @@ import PersonImage from '../img/img.svg';
 
 export const Baner = () => {
 	return (
-		<div className="flex flex-col  justify-between mx-16 items-center min-h-full  lg:mt-0 md:flex-row  md:pt-40">
+		<div className="flex flex-col  justify-between mx-16 items-center min-h-full  lg:mt-0 md:flex-row  md:pt-28">
 			<div className="bg-no-repeat bg-left-center mt-10 bg-left bg-contain mx-auto w-full lg:w-full md:bg-elipse md:-ml-20 md:bg-50%">
 				<div className="items-center mx-auto flex flex-col flex-row md:ml-10 lg:items-start lg:ml-20">
 					<div className="">
@@ -48,7 +48,7 @@ export const Baner = () => {
 					</div>
 				</div>
 			</div>
-			<div className=" mt-10 max-w-md w-full md:max-w-max lg:w-max md:mt-0 lg:-mr-10 md:-mr-20">
+			<div className="mt-0 max-w-md w-full md:max-w-max lg:w-max md:mt-0 md:-mr-20 lg:-ml-24  ">
 				<div>
 					<img src={PersonImage} alt="Baner" />
 				</div>
