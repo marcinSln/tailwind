@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 
 export function InputField({ options, typeOfElement = 'input', type = 'text', name }) {
 	return typeOfElement === 'input' ? (
-		<input name={name} className="py-4 px-4 placeholder-gray" type={type} placeholder={name} />
+		<input name={name} className="input" type={type} placeholder={name} />
 	) : typeOfElement === 'select' ? (
-		<select className="py-4 px-4 placeholder-gray text-gray " name={name}>
+		<select className="inputtext-gray " name={name}>
 			{options.map((item) => {
 				{
 					return (
@@ -16,6 +16,6 @@ export function InputField({ options, typeOfElement = 'input', type = 'text', na
 			})}
 		</select>
 	) : typeOfElement === 'textarea' ? (
-		<textarea name={name} className="my-6 py-4 px-4 placeholder-gray w-full" placeholder={name} rows="10" />
+		<textarea name={name} className="my-6 input w-full" placeholder={name} rows="10" />
 	) : null;
 }

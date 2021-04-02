@@ -46,7 +46,7 @@ export class Header extends Component {
 				data-sticky-element="true"
 			>
 				<div
-					className={`flex w-full duration-300 ease-in-out transform-gpu  lg:-mt-3 transition-all ${isSticky
+					className={`flex w-full duration-300 ease-in-out transform-gpu lg:-mt-3 transition-all ${isSticky
 						? 'sticky-header'
 						: null}`}
 				>

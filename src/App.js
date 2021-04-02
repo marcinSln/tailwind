@@ -73,7 +73,7 @@ export default function App() {
 							text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 						incididunt ut labore et t enim ad minim veniam, quis nostrud exercitation."
 						/>
-						<Section className="py-5 grid gap-x-3 gap-y-16 justify-items-center sm:grid-cols-2  md:grid-cols-3 lg:gap-y-32 lg:gap-x-6 xs:gap-x-3 xs:grid-cols-2">
+						<Section className="skill__content">
 							<Skill
 								textHeader="Web Design"
 								text="Get awesome design services from inkyy.com "
