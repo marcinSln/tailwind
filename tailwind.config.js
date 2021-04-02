@@ -40,7 +40,9 @@ module.exports = {
 				logo: [ 'FREESCPT' ],
 				text: [ 'Poppins' ]
 			},
-
+			inset: {
+				'-3.5': '-2px'
+			},
 			fontSize: {
 				xl: '1.34rem',
 				'9xl': '7rem'
@@ -67,7 +69,8 @@ module.exports = {
 					DEFAULT: '#707070'
 				},
 				blue: {
-					dark: '#0E0C38'
+					dark: '#0E0C38',
+					sticky: '#2c276e91'
 				}
 			},
 			borderColor: {

@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 
-export const Section = ({ children, className }) => {
-	return <div className={className}>{children}</div>;
+export const Section = ({ children, className, target }) => {
+	return (
+		<div target-scroll={target ? target : null} className={className}>
+			{children}
+		</div>
+	);
 };

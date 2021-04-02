@@ -24,6 +24,7 @@ import { OptionContactForm } from './Config/Config';
 import aboutMeImg from './img/about.svg';
 import worldWide from './img/worldwide.svg';
 import skillItem from './img/item.svg';
+import LinkScroll from './Components/Menu/LinkScroll';
 
 export default function App() {
 	return (
@@ -32,7 +33,7 @@ export default function App() {
 				<Header />
 				<Baner />
 
-				<Section className="bg-darkBlue pt-20 pb-16 lg:pt-48 lg:pb-36">
+				<Section className="bg-darkBlue pt-20 pb-16 lg:pt-48 lg:pb-36" target="#About">
 					<Wrapper isRow="true" className="items-start flex-wrap md:flex-nowrap">
 						<SectionWithHeader
 							textHeader="About Me"
@@ -48,7 +49,7 @@ export default function App() {
 						<ImageWithBorder image={aboutMeImg} className="w-full max-w-2xl md:w-6/12 xl:w-1/2" />
 					</Wrapper>
 				</Section>
-				<Section className="bg-darkBlue pt-8  pb-24 lg:pt-8 lg:pb-32 ">
+				<Section className="bg-darkBlue pt-8  pb-24 lg:pt-8 lg:pb-32 " target="#Portfolio">
 					<Wrapper isRow="false" className="items-start flex-wrap">
 						<div className="w-full  md:w-6/12 md:w-auto">
 							<h2 className="font-bold text-center text-white text-4xl lg:text-6xl md:text-left relative">
@@ -133,7 +134,7 @@ export default function App() {
 						</Section>
 					</Wrapper>
 				</Section>
-				<Section className="pb-24 ">
+				<Section className="pb-24 " target="#Contact">
 					<Wrapper>
 						<TextHeader
 							text="Let’s Make Something </br> Great Together"
@@ -165,28 +166,19 @@ export default function App() {
 					<Wrapper>
 						<TextHeader text="Portfolio" level="2" lineType="vertical-above" spaceBetween="mb-14" />
 						<div className="row flex divide-x-2 divide-white justify-center py-2 pt-3 md:pt-6">
-							<Link className="text-white text-base px-1 font-medium" to="">
-								About
-							</Link>
-							<Link className="text-white text-base px-1 font-medium" to="">
-								Portfolio
-							</Link>
-							<Link className="text-white text-base px-1 font-medium" to="">
-								Kontakt
-							</Link>
+							<LinkScroll scrollTo="#About" name="About" className="footer__text" />
+							<LinkScroll scrollTo="#Portfolio" name="Portfolio" className="footer__text" />
+							<LinkScroll scrollTo="#Kontakt" name="Kontakt" className="footer__text" />
 						</div>
 
 						<div className="row flex divide-x-2 divide-white justify-center py-2 pb-3 md:pb-6">
-							<span className="text-white text-base px-1 font-medium" to="">
+							<span className="footer__text" to="">
 								NY
 							</span>
-							<a className="text-white text-base px-1 font-medium" href="tel:538756519">
+							<a className="footer__text" href="tel:538756519">
 								538 756 519
 							</a>
-							<a
-								className="text-white text-base px-1 font-medium"
-								href="mailto:marcin.smolen.774@gmail.com"
-							>
+							<a className="footer__text" href="mailto:marcin.smolen.774@gmail.com">
 								marcin.smolen.774@gmail.com
 							</a>
 						</div>
