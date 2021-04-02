@@ -80,10 +80,6 @@
 	@apply font-text;
 }
 
-.footer__text {
-	@apply text-white text-base px-2 font-medium;
-}
-
 .text-header {
 	@apply font-semibold text-white text-4xl lg:text-6xl;
 }
@@ -92,9 +88,21 @@
 	@apply text-center;
 }
 
+.text-icon {
+	@apply text-white text-4xl;
+}
+
 .bg-blur {
 	backdrop-filter: blur(20px);
 	transition: all .3s ease-in-out;
+}
+
+.footer__text {
+	@apply text-white text-base px-2 font-medium;
+}
+
+.footer__content {
+	@apply flex divide-x-2 divide-white justify-center py-2 pb-3 md:pb-6;
 }
 
 .sticky-header {
@@ -103,6 +111,10 @@
 
 .skill__content {
 	@apply py-5 grid gap-x-3 gap-y-16 justify-items-center xs:gap-x-3 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:gap-y-32 lg:gap-x-6;
+}
+
+.section--footer {
+	@apply bg-darkBlue py-7 border-gray border-t-1 justify-center flex md:py-14;
 }
 
 .input {

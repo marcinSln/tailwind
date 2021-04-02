@@ -21,21 +21,23 @@ export const Baner = () => {
 
 						<p className="text-white  text text-xl">Find Me on</p>
 						<div className="pb-2 pt-1 pl-0.5  gap-x-4 flex">
-							<Link to="#" className="text-white text-4xl ">
+							{/* TODO: Move to config */}
+							<Link to="#" className="text-icon ">
 								<FaBehance />
 							</Link>
-							<Link to="#" className="text-white text-4xl">
+							<Link to="#" className="text-icon">
 								<FaDribbble />
 							</Link>
-							<Link to="#" className="text-white text-4xl">
+							<Link to="#" className="text-icon">
 								<FaInstagram />
 							</Link>
-							<Link to="#" className="text-white text-4xl">
+							<Link to="#" className="text-icon">
 								<FaLinkedin />
 							</Link>
-							<Link to="#" className="text-white text-4xl">
+							<Link to="#" className="text-icon">
 								<FaPinterest />
 							</Link>
+							{/* TODO: Move to config */}
 						</div>
 						<div className="py-4 mt-2 flex gap-x-4">
 							<Link to="#" className="btn btn--red btn--rounded">

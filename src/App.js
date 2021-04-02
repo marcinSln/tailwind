@@ -35,6 +35,7 @@ export default function App() {
 
 				<Section className="bg-darkBlue pt-20 pb-16 lg:pt-48 lg:pb-36" target="#About">
 					<Wrapper isRow="true" className="items-start flex-wrap md:flex-nowrap">
+						{/* TODO: Move to config */}
 						<SectionWithHeader
 							textHeader="About Me"
 							textBegin="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
@@ -46,6 +47,7 @@ export default function App() {
 							headerLine="right"
 							className="w-full mb-10 md:w-6/12 xl:w-1/2 md:mb-0"
 						/>
+						{/* TODO: Move to config */}
 						<ImageWithBorder image={aboutMeImg} className="w-full max-w-2xl md:w-6/12 xl:w-1/2" />
 					</Wrapper>
 				</Section>
@@ -66,6 +68,7 @@ export default function App() {
 				<Section className="pt-12 pb-24 md:pt-24 md:pb-52">
 					<Wrapper className="items-start">
 						<TextHeader text="My Capabilities" level="2" lineType="underline" />
+						{/* TODO: Move to config */}
 						<Text
 							color="white"
 							size="3xl"
@@ -73,7 +76,9 @@ export default function App() {
 							text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 						incididunt ut labore et t enim ad minim veniam, quis nostrud exercitation."
 						/>
+						{/* TODO: Move to config */}
 						<Section className="skill__content">
+							{/* TODO: Move to config */}
 							<Skill
 								textHeader="Web Design"
 								text="Get awesome design services from inkyy.com "
@@ -104,12 +109,14 @@ export default function App() {
 								text="Get awesome design services from inkyy.com "
 								image={skillItem}
 							/>
+							{/* TODO: Move to config */}
 						</Section>
 					</Wrapper>
 				</Section>
 				<Section className="bg-darkBlue  pt-12 pb-12 md:pt-24 md:pb-52">
 					<Wrapper>
 						<TextHeader text="What My Client Says" level="2" lineType="underline" />
+						{/* TODO: Move to config */}
 						<Text
 							color="white"
 							size="3xl"
@@ -117,12 +124,14 @@ export default function App() {
 							text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
 							ut labore et t enim ad minim veniam, quis nostrud exercitation."
 						/>
+						{/* TODO: Move to config */}
 						<Section className="flex-col items-center justify-center gap-x-12 mt-10  lg:mt-20 md:flex md:flex-row lg:gap-x-24">
 							<img
 								src={worldWide}
 								alt="What My Client Says"
 								className="w-full md:w-1/2 inline-block mb-10 md:-ml-5"
 							/>
+							{/* TODO: Move to config */}
 							<Text
 								align="left"
 								size="3xl"
@@ -131,6 +140,7 @@ export default function App() {
 								laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto 
 								beatae vitae dicta sunt is the most explicabo. "
 							/>
+							{/* TODO: Move to config */}
 						</Section>
 					</Wrapper>
 				</Section>
@@ -171,7 +181,7 @@ export default function App() {
 							<LinkScroll scrollTo="#Kontakt" name="Kontakt" className="footer__text" />
 						</div>
 
-						<div className="row flex divide-x-2 divide-white justify-center py-2 pb-3 md:pb-6">
+						<div className="footer__content">
 							<span className="footer__text" to="">
 								NY
 							</span>
@@ -183,26 +193,28 @@ export default function App() {
 							</a>
 						</div>
 
-						<div className="py-4  gap-x-4 flex justify-center">
-							<Link to="#" className="text-white text-4xl ">
+						<div className="py-4 gap-x-4 flex justify-center">
+							{/* TODO: Move to config */}
+							<Link to="#" className="text-icon">
 								<FaBehance />
 							</Link>
-							<Link to="#" className="text-white text-4xl">
+							<Link to="#" className="text-icon">
 								<FaDribbble />
 							</Link>
-							<Link to="#" className="text-white text-4xl">
+							<Link to="#" className="text-icon">
 								<FaInstagram />
 							</Link>
-							<Link to="#" className="text-white text-4xl">
+							<Link to="#" className="text-icon">
 								<FaLinkedin />
 							</Link>
-							<Link to="#" className="text-white text-4xl">
+							<Link to="#" className="text-icon">
 								<FaPinterest />
 							</Link>
+							{/* TODO: Move to config */}
 						</div>
 					</Wrapper>
 				</Section>
-				<Section className="bg-darkBlue py-7 border-grray border-t-1 justify-center flex md:py-14">
+				<Section className="section--footer">
 					<span className="text-white text-base">Copyright © 2019 Graphics Studio | All rights reserved</span>
 				</Section>
 			</div>
