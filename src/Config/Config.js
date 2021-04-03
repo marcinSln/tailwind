@@ -57,3 +57,36 @@ export const textInSectionAboutMe = [
 		textonButton: 'Download  CV'
 	}
 ];
+
+export const skills = [
+	{
+		header: 'Web',
+		text: 'Get awesome design services from inkyy.com ',
+		image: 'item.svg'
+	},
+	{
+		header: 'JavasScript',
+		text: 'Get awesome design services from inkyy.com ',
+		image: 'item.svg'
+	},
+	{
+		header: 'Web Design',
+		text: 'Get awesome design services from inkyy.com ',
+		image: 'item.svg'
+	},
+	{
+		header: 'Web Design',
+		text: 'Get awesome design services from inkyy.com ',
+		image: 'item.svg'
+	},
+	{
+		header: 'Web Design',
+		text: 'Get awesome design services from inkyy.com ',
+		image: 'item.svg'
+	},
+	{
+		header: 'Web Design',
+		text: 'Get awesome design services from inkyy.com ',
+		image: 'item.svg'
+	}
+];

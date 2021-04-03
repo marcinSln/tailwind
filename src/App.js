@@ -18,12 +18,11 @@ import { FaBehance, FaDribbble, FaInstagram, FaLinkedin, FaPinterest } from 'rea
 import { Link } from 'react-router-dom';
 
 // config
-import { OptionContactForm, textInSectionAboutMe } from './Config/Config';
+import { OptionContactForm, textInSectionAboutMe, skills } from './Config/Config';
 
 //images
 import aboutMeImg from './img/about.svg';
 import worldWide from './img/worldwide.svg';
-import skillItem from './img/item.svg';
 import LinkScroll from './Components/Menu/LinkScroll';
 
 export default function App() {
@@ -35,14 +34,12 @@ export default function App() {
 
 				<Section className="bg-darkBlue pt-20 pb-16 lg:pt-48 lg:pb-36" target="#About">
 					<Wrapper isRow="true" className="items-start flex-wrap md:flex-nowrap">
-						{/* TODO: Move to config */}
 						<SectionWithHeader
 							content={textInSectionAboutMe}
 							buttonType="transparent"
 							headerLine="right"
 							className="w-full mb-10 md:w-6/12 xl:w-1/2 md:mb-0"
 						/>
-						{/* TODO: Move to config */}
 						<ImageWithBorder image={aboutMeImg} className="w-full max-w-2xl md:w-6/12 xl:w-1/2" />
 					</Wrapper>
 				</Section>
@@ -51,9 +48,7 @@ export default function App() {
 						<div className="w-full  md:w-6/12 md:w-auto">
 							<h2 className="font-bold text-center text-white text-4xl lg:text-6xl md:text-left relative">
 								Portfolio
-								<span className="border-b border-red -right-40  w-7/12 md:right-20 flex absolute h-1 top-1/2 transform -translate-y-1/2  md:w-4/12">
-									&nbsp;
-								</span>
+								<span className="horizontal-line" />
 							</h2>
 						</div>
 						<div className="w-6/12 w-auto" />
@@ -74,36 +69,7 @@ export default function App() {
 						{/* TODO: Move to config */}
 						<Section className="skill__content">
 							{/* TODO: Move to config */}
-							<Skill
-								textHeader="Web Design"
-								text="Get awesome design services from inkyy.com "
-								image={skillItem}
-							/>
-							<Skill
-								textHeader="Web Design"
-								text="Get awesome design services from inkyy.com "
-								image={skillItem}
-							/>
-							<Skill
-								textHeader="Web Design"
-								text="Get awesome design services from inkyy.com "
-								image={skillItem}
-							/>
-							<Skill
-								textHeader="Web Design"
-								text="Get awesome design services from inkyy.com "
-								image={skillItem}
-							/>
-							<Skill
-								textHeader="Web Design"
-								text="Get awesome design services from inkyy.com "
-								image={skillItem}
-							/>
-							<Skill
-								textHeader="Web Design"
-								text="Get awesome design services from inkyy.com "
-								image={skillItem}
-							/>
+							{skills.map((skill) => <Skill skill={skill} />)}
 							{/* TODO: Move to config */}
 						</Section>
 					</Wrapper>
