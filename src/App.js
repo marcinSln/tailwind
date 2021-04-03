@@ -18,7 +18,7 @@ import { FaBehance, FaDribbble, FaInstagram, FaLinkedin, FaPinterest } from 'rea
 import { Link } from 'react-router-dom';
 
 // config
-import { OptionContactForm } from './Config/Config';
+import { OptionContactForm, textInSectionAboutMe } from './Config/Config';
 
 //images
 import aboutMeImg from './img/about.svg';
@@ -37,12 +37,7 @@ export default function App() {
 					<Wrapper isRow="true" className="items-start flex-wrap md:flex-nowrap">
 						{/* TODO: Move to config */}
 						<SectionWithHeader
-							textHeader="About Me"
-							textBegin="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
-								ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-								nisi ut aliquip ex ea commodo consequat"
-							text="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-							textButton="Download  CV"
+							content={textInSectionAboutMe}
 							buttonType="transparent"
 							headerLine="right"
 							className="w-full mb-10 md:w-6/12 xl:w-1/2 md:mb-0"

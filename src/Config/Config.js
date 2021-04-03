@@ -45,3 +45,15 @@ export const tabsContent = [
 	{ name: 'Websites', items: [ { src: tab2, header: 'Bigos' }, { src: tab3 }, { src: tab6 } ], isActive: false },
 	{ name: 'Mobile Apps', items: [ { src: tab2, text: 'text 1' }, { src: tab3 } ], isActive: false }
 ];
+
+export const textInSectionAboutMe = [
+	{
+		header: 'About Me',
+		introduction: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed 
+					do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+					ad minim veniam, quis nostrud exercitation ullamco laboris 
+					nisi ut aliquip ex ea commodo consequat`,
+		text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+		textonButton: 'Download  CV'
+	}
+];

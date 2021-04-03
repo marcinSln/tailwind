@@ -76,6 +76,10 @@
 
 /* menu link */
 
+.horizontal-line {
+	@apply border-b-1 border-red w-7/12 -right-40 flex absolute h-1 top-1/2 right-0 transform -translate-y-1/2 md:-right-5 md:w-1/2 xl:w-1/2;
+}
+
 .text {
 	@apply font-text;
 }
@@ -86,6 +90,10 @@
 
 .text--center {
 	@apply text-center;
+}
+
+.section-text {
+	@apply text-white mt-3 mb-1 text-center font-light md:text-left md:mt-6 md:mb-2 md:leading-6 md:text-xl lg:leading-loose lg:text-2xl;
 }
 
 .text-icon {
