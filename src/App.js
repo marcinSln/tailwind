@@ -23,6 +23,7 @@ import {
 	textInSectionWhatSayAboutMe,
 	sectionMyCababilities,
 	sectionLetsMakeSomething,
+	footerText,
 	skills,
 	footerLink,
 	socialMedia
@@ -42,7 +43,6 @@ export default function App() {
 			<div className="bg-navyBlue  min-h-screen">
 				<Header />
 				<Baner />
-
 				<Section className="bg-darkBlue pt-20 pb-16 lg:pt-48 lg:pb-36" target="#About">
 					<Wrapper isRow="true" className="items-start flex-wrap md:flex-nowrap">
 						<SectionWithHeader
@@ -127,15 +127,11 @@ export default function App() {
 							))}
 						</div>
 						<div className="footer__content">
-							<span className="footer__text" to="">
-								NY
-							</span>
-							<a className="footer__text" href="tel:538756519">
-								538 756 519
-							</a>
-							<a className="footer__text" href="mailto:marcin.smolen.774@gmail.com">
-								marcin.smolen.774@gmail.com
-							</a>
+							{footerText.map((item) => (
+								<a className={item.className} href={item.link}>
+									{item.text}
+								</a>
+							))}
 						</div>
 						<div className="py-4 gap-x-4 flex justify-center">
 							{socialMedia.map((item) => (

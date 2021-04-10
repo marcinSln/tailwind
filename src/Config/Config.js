@@ -92,6 +92,12 @@ export const footerLink = [
 	{ text: 'Kontakt', className: 'footer__text', scrollTo: '#Kontakt' }
 ];
 
+export const footerText = [
+	{ text: 'NY', className: 'footer__text', link: null },
+	{ text: '538 756 519', className: 'footer__text', link: 'tel:538756519' },
+	{ text: 'marcin.smolen.774@gmail.com', className: 'footer__text', link: 'mailto:marcin.smolen.774@gmail.com' }
+];
+
 export const socialMedia = [
 	{ icon: 'fa fa-behance', link: 'https://www.facebook.com' },
 	{ icon: 'fa fa-dribbble', link: 'https://www.dribble.com' },
