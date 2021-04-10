@@ -17,7 +17,16 @@ import parse from 'html-react-parser';
 import { Link } from 'react-router-dom';
 
 // config
-import { OptionContactForm, textInSectionAboutMe, skills, socialMedia } from './Config/Config';
+import {
+	OptionContactForm,
+	textInSectionAboutMe,
+	textInSectionWhatSayAboutMe,
+	sectionMyCababilities,
+	sectionLetsMakeSomething,
+	skills,
+	footerLink,
+	socialMedia
+} from './Config/Config';
 
 //images
 import Parser from 'html-react-parser';
@@ -59,54 +68,34 @@ export default function App() {
 				</Section>
 				<Section className="pt-12 pb-24 md:pt-24 md:pb-52">
 					<Wrapper className="items-start">
-						<TextHeader text="My Capabilities" level="2" lineType="underline" />
-						{/* TODO: Move to config */}
-						<Text
-							color="white"
-							size="3xl"
-							align="center"
-							text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-						incididunt ut labore et t enim ad minim veniam, quis nostrud exercitation."
-						/>
-						{/* TODO: Move to config */}
+						<TextHeader text={sectionMyCababilities.header} level="2" lineType="underline" />
+						<Text color="white" size="3xl" align="center" text={sectionMyCababilities.text} />
 						<Section className="skill__content">{skills.map((skill) => <Skill skill={skill} />)}</Section>
 					</Wrapper>
 				</Section>
 				<Section className="bg-darkBlue  pt-12 pb-12 md:pt-24 md:pb-52">
 					<Wrapper>
-						<TextHeader text="What My Client Says" level="2" lineType="underline" />
-						{/* TODO: Move to config */}
-						<Text
-							color="white"
-							size="3xl"
-							align="center"
-							text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
-							ut labore et t enim ad minim veniam, quis nostrud exercitation."
-						/>
-						{/* TODO: Move to config */}
+						<TextHeader text={textInSectionWhatSayAboutMe.header} level="2" lineType="underline" />
+						<Text color="white" size="3xl" align="center" text={textInSectionWhatSayAboutMe.introduction} />
 						<Section className="flex-col items-center justify-center gap-x-12 mt-10  lg:mt-20 md:flex md:flex-row lg:gap-x-24">
 							<img
 								src={worldWide}
-								alt="What My Client Says"
+								alt={textInSectionWhatSayAboutMe.header}
 								className="w-full md:w-1/2 inline-block mb-10 md:-ml-5"
 							/>
-							{/* TODO: Move to config */}
 							<Text
 								align="left"
 								size="3xl"
 								lineHeight="leading-loose"
-								text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
-								laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto 
-								beatae vitae dicta sunt is the most explicabo. "
+								text={textInSectionWhatSayAboutMe.text}
 							/>
-							{/* TODO: Move to config */}
 						</Section>
 					</Wrapper>
 				</Section>
 				<Section className="pb-24 " target="#Contact">
 					<Wrapper>
 						<TextHeader
-							text="Let’s Make Something </br> Great Together"
+							text={sectionLetsMakeSomething.header}
 							level="2"
 							lineType="vertical-above"
 							spaceBetween="mb-14"
@@ -115,9 +104,7 @@ export default function App() {
 							align="center"
 							className="max-w-4xl mx-auto leading-loose"
 							lineHeight="leading-loose"
-							text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-								sed do eiusmod tempor incididunt ut labore et t enim ad minim veniam, 
-								quis nostrud exercitation."
+							text={sectionLetsMakeSomething.text}
 						/>
 						<FormHandler className="max-w-6xl mx-auto text-center">
 							<div className="gap-y-6 grid-cols-1 grid md:grid-cols-2 md:gap-x-6">
@@ -135,9 +122,9 @@ export default function App() {
 					<Wrapper>
 						<TextHeader text="Portfolio" level="2" lineType="vertical-above" spaceBetween="mb-14" />
 						<div className="row flex divide-x-2 divide-white justify-center py-2 pt-3 md:pt-6">
-							<LinkScroll scrollTo="#About" name="About" className="footer__text" />
-							<LinkScroll scrollTo="#Portfolio" name="Portfolio" className="footer__text" />
-							<LinkScroll scrollTo="#Kontakt" name="Kontakt" className="footer__text" />
+							{footerLink.map((link) => (
+								<LinkScroll scrollTo={link.scrollTo} name={link.text} className={link.className} />
+							))}
 						</div>
 						<div className="footer__content">
 							<span className="footer__text" to="">

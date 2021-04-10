@@ -58,6 +58,40 @@ export const textInSectionAboutMe = [
 	}
 ];
 
+export const textInSectionWhatSayAboutMe = [
+	{
+		header: 'What My Client Says',
+		introduction: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
+		ut labore et t enim ad minim veniam, quis nostrud exercitation.`,
+		text: `Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+			laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto 
+			beatae vitae dicta sunt is the most explicabo.`
+	}
+];
+
+export const sectionMyCababilities = [
+	{
+		header: 'My Capabilities',
+		text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+			  incididunt ut labore et t enim ad minim veniam, quis nostrud exercitation.`
+	}
+];
+
+export const sectionLetsMakeSomething = [
+	{
+		header: 'Let’s Make Something </br> Great Together',
+		text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+			   sed do eiusmod tempor incididunt ut labore et t enim ad minim veniam, 
+			   quis nostrud exercitation.`
+	}
+];
+
+export const footerLink = [
+	{ text: 'About', className: 'footer__text', scrollTo: '#About' },
+	{ text: 'Portfolio', className: 'footer__text', scrollTo: '#Portfolio' },
+	{ text: 'Kontakt', className: 'footer__text', scrollTo: '#Kontakt' }
+];
+
 export const socialMedia = [
 	{ icon: 'fa fa-behance', link: 'https://www.facebook.com' },
 	{ icon: 'fa fa-dribbble', link: 'https://www.dribble.com' },
