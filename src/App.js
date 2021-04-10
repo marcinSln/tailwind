@@ -49,7 +49,10 @@ export default function App() {
 							headerLine="right"
 							className="w-full mb-10 md:w-6/12 xl:w-1/2 md:mb-0"
 						/>
-						<ImageWithBorder image={aboutMeImg} className="w-full max-w-2xl md:w-6/12 xl:w-1/2" />
+						<ImageWithBorder
+							image={aboutMeImg}
+							className="bg-navyBlue max-w-3xl py-8 px-5 lg:py-20 lg:px-16"
+						/>
 					</Wrapper>
 				</Section>
 				<Section className="bg-darkBlue pt-8  pb-24 lg:pt-8 lg:pb-32 " target="#Portfolio">
@@ -66,25 +69,23 @@ export default function App() {
 				</Section>
 				<Section className="pt-12 pb-24 md:pt-24 md:pb-52">
 					<Wrapper className="items-start">
-						<TextHeader text={sectionMyCababilities.header} level="2" lineType="underline" />
-						<Text color="white" size="3xl" align="center" text={sectionMyCababilities.text} />
+						<TextHeader text={sectionMyCababilities.header} lineType="underline" />
+						<Text className="text__section lg:text-3xl" text={sectionMyCababilities.text} />
 						<Section className="skill__content">{skills.map((skill) => <Skill skill={skill} />)}</Section>
 					</Wrapper>
 				</Section>
 				<Section className="bg-darkBlue  pt-12 pb-12 md:pt-24 md:pb-52">
 					<Wrapper>
-						<TextHeader text={textInSectionWhatSayAboutMe.header} level="2" lineType="underline" />
-						<Text color="white" size="3xl" align="center" text={textInSectionWhatSayAboutMe.introduction} />
-						<Section className="flex-col items-center justify-center gap-x-12 mt-10  lg:mt-20 md:flex md:flex-row lg:gap-x-24">
+						<TextHeader text={textInSectionWhatSayAboutMe.header} lineType="underline" />
+						<Text className="text__section lg:text-3xl" text={textInSectionWhatSayAboutMe.introduction} />
+						<Section className="flex-col items-center justify-center gap-x-12 mt-10 lg:mt-20 md:flex md:flex-row lg:gap-x-24">
 							<img
 								src={worldWide}
 								alt={textInSectionWhatSayAboutMe.header}
 								className="w-full md:w-1/2 inline-block mb-10 md:-ml-5"
 							/>
 							<Text
-								align="left"
-								size="3xl"
-								lineHeight="leading-loose"
+								className="text__section lg:text-3xl md:text-left max-w-4xl"
 								text={textInSectionWhatSayAboutMe.text}
 							/>
 						</Section>
@@ -94,14 +95,11 @@ export default function App() {
 					<Wrapper>
 						<TextHeader
 							text={sectionLetsMakeSomething.header}
-							level="2"
 							lineType="vertical-above"
 							spaceBetween="mb-14"
 						/>
 						<Text
-							align="center"
-							className="max-w-4xl mx-auto leading-loose"
-							lineHeight="leading-loose"
+							className="text__section lg:text-xl md:text-center max-w-4xl"
 							text={sectionLetsMakeSomething.text}
 						/>
 						<FormHandler className="max-w-6xl mx-auto text-center">
@@ -118,7 +116,7 @@ export default function App() {
 				</Section>
 				<Section className="pb-12 bg-darkBlue md:pb-24">
 					<Wrapper>
-						<TextHeader text="Portfolio" level="2" lineType="vertical-above" spaceBetween="mb-14" />
+						<TextHeader text="Portfolio" lineType="vertical-above" spaceBetween="mb-14" />
 						<div className="row flex divide-x-2 divide-white justify-center py-2 pt-3 md:pt-6">
 							{footerLink.map((link) => (
 								<LinkScroll scrollTo={link.scrollTo} name={link.text} className={link.className} />
