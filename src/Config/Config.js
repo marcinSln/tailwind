@@ -58,24 +58,31 @@ export const textInSectionAboutMe = [
 	}
 ];
 
-export const textInSectionWhatSayAboutMe = [
-	{
-		header: 'What My Client Says',
-		introduction: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
+export const textInSectionWhatSayAboutMe = {
+	header: 'What My Client Says',
+	introduction: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
 		ut labore et t enim ad minim veniam, quis nostrud exercitation.`,
-		text: `Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+	text: `Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
 			laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto 
 			beatae vitae dicta sunt is the most explicabo.`
-	}
-];
+};
 
-export const sectionMyCababilities = [
-	{
-		header: 'My Capabilities',
-		text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+export const sectionMyCababilities = {
+	header: 'My Capabilities',
+	text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 			  incididunt ut labore et t enim ad minim veniam, quis nostrud exercitation.`
-	}
-];
+};
+
+export const baner = {
+	subtitle: 'Hello, i am',
+	header: 'Mark <br/> Reccardo',
+	socialMediaHeader: 'Find Me on',
+	text: 'A young <span class="text-red text text-xl">UI/UX</span> designer with crazy for mobile & web design.',
+	buttons: [
+		{ text: 'Hire me', className: 'btn btn--red btn--rounded', link: '#' },
+		{ text: 'Portfolio', className: 'btn btn--transparent', link: '#' }
+	]
+};
 
 export const sectionLetsMakeSomething = [
 	{

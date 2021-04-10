@@ -30,7 +30,6 @@ import {
 } from './Config/Config';
 
 //images
-import Parser from 'html-react-parser';
 import aboutMeImg from './img/about.svg';
 import worldWide from './img/worldwide.svg';
 import LinkScroll from './Components/Menu/LinkScroll';

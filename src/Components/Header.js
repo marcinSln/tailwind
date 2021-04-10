@@ -1,9 +1,7 @@
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
-
 import React, { Component } from 'react';
 import LinkItem from './Menu/LinkItem';
-// config
 import { HeaderLinks } from '../Config/Config';
 
 export class Header extends Component {
@@ -45,9 +43,6 @@ export class Header extends Component {
 				<div className={`header__container ${isSticky ? 'sticky-header' : null}`}>
 					<div className="flex-1  flex xl:flex-1 md:flex-none">
 						<h1 className={`header__logo  ${isSticky ? 'text-4xl' : null}`}>Portfolio</h1>
-						<div className="flex z-10 w-full">
-							{/* <img src={backgroundImage} className="hidden xl:block" alt="Porfolio" /> */}
-						</div>
 					</div>
 					<div className="header__hambuger-menu " onClick={(e) => this.handleOpen(e)}>
 						{isOpen ? <FaTimes /> : <FaBars />}
