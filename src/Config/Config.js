@@ -92,6 +92,12 @@ export const footerLink = [
 	{ text: 'Kontakt', className: 'footer__text', scrollTo: '#Kontakt' }
 ];
 
+export const HeaderLinks = [
+	{ text: 'About', className: 'footer__text', scrollTo: '#About' },
+	{ text: 'Portfolio', className: 'footer__text', scrollTo: '#Portfolio' },
+	{ text: 'Kontakt', className: 'footer__text', scrollTo: '#Kontakt' }
+];
+
 export const footerText = [
 	{ text: 'NY', className: 'footer__text', link: null },
 	{ text: '538 756 519', className: 'footer__text', link: 'tel:538756519' },

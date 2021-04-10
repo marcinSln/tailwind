@@ -34,7 +34,6 @@ import Parser from 'html-react-parser';
 import aboutMeImg from './img/about.svg';
 import worldWide from './img/worldwide.svg';
 import LinkScroll from './Components/Menu/LinkScroll';
-import { FaBehance, FaDribbble, FaInstagram, FaLinkedin, FaPinterest } from 'react-icons/fa';
 import 'font-awesome/css/font-awesome.min.css';
 
 export default function App() {
@@ -118,7 +117,7 @@ export default function App() {
 						</FormHandler>
 					</Wrapper>
 				</Section>
-				<Section className="pb-12 bg-darkBlue  md:pb-24">
+				<Section className="pb-12 bg-darkBlue md:pb-24">
 					<Wrapper>
 						<TextHeader text="Portfolio" level="2" lineType="vertical-above" spaceBetween="mb-14" />
 						<div className="row flex divide-x-2 divide-white justify-center py-2 pt-3 md:pt-6">
