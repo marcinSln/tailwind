@@ -13,17 +13,19 @@ import { Text } from './Components/Text';
 import { Skill } from './Components/Skill';
 import { FormHandler } from './Components/FormHandler';
 import { InputField } from './Components/InputField';
-import { FaBehance, FaDribbble, FaInstagram, FaLinkedin, FaPinterest } from 'react-icons/fa';
-
+import parse from 'html-react-parser';
 import { Link } from 'react-router-dom';
 
 // config
-import { OptionContactForm, textInSectionAboutMe, skills } from './Config/Config';
+import { OptionContactForm, textInSectionAboutMe, skills, socialMedia } from './Config/Config';
 
 //images
+import Parser from 'html-react-parser';
 import aboutMeImg from './img/about.svg';
 import worldWide from './img/worldwide.svg';
 import LinkScroll from './Components/Menu/LinkScroll';
+import { FaBehance, FaDribbble, FaInstagram, FaLinkedin, FaPinterest } from 'react-icons/fa';
+import 'font-awesome/css/font-awesome.min.css';
 
 export default function App() {
 	return (
@@ -67,11 +69,7 @@ export default function App() {
 						incididunt ut labore et t enim ad minim veniam, quis nostrud exercitation."
 						/>
 						{/* TODO: Move to config */}
-						<Section className="skill__content">
-							{/* TODO: Move to config */}
-							{skills.map((skill) => <Skill skill={skill} />)}
-							{/* TODO: Move to config */}
-						</Section>
+						<Section className="skill__content">{skills.map((skill) => <Skill skill={skill} />)}</Section>
 					</Wrapper>
 				</Section>
 				<Section className="bg-darkBlue  pt-12 pb-12 md:pt-24 md:pb-52">
@@ -141,7 +139,6 @@ export default function App() {
 							<LinkScroll scrollTo="#Portfolio" name="Portfolio" className="footer__text" />
 							<LinkScroll scrollTo="#Kontakt" name="Kontakt" className="footer__text" />
 						</div>
-
 						<div className="footer__content">
 							<span className="footer__text" to="">
 								NY
@@ -153,25 +150,12 @@ export default function App() {
 								marcin.smolen.774@gmail.com
 							</a>
 						</div>
-
 						<div className="py-4 gap-x-4 flex justify-center">
-							{/* TODO: Move to config */}
-							<Link to="#" className="text-icon">
-								<FaBehance />
-							</Link>
-							<Link to="#" className="text-icon">
-								<FaDribbble />
-							</Link>
-							<Link to="#" className="text-icon">
-								<FaInstagram />
-							</Link>
-							<Link to="#" className="text-icon">
-								<FaLinkedin />
-							</Link>
-							<Link to="#" className="text-icon">
-								<FaPinterest />
-							</Link>
-							{/* TODO: Move to config */}
+							{socialMedia.map((item) => (
+								<a className="text-icon" href={item.link}>
+									<i className={item.icon} />
+								</a>
+							))}
 						</div>
 					</Wrapper>
 				</Section>

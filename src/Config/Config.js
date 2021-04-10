@@ -58,6 +58,13 @@ export const textInSectionAboutMe = [
 	}
 ];
 
+export const socialMedia = [
+	{ icon: 'fa fa-behance', link: 'https://www.facebook.com' },
+	{ icon: 'fa fa-dribbble', link: 'https://www.dribble.com' },
+	{ icon: 'fa fa-instagram', link: 'https://www.instagram.com' },
+	{ icon: 'fa fa-pinterest', link: 'https://www.pinterest.com' }
+];
+
 export const skills = [
 	{
 		header: 'Web',

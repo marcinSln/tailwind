@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaBehance, FaDribbble, FaInstagram, FaLinkedin, FaPinterest } from 'react-icons/fa';
 import PersonImage from '../img/img.svg';
+import { socialMedia } from '../Config/Config';
 
 export const Baner = () => {
 	return (
@@ -9,8 +10,8 @@ export const Baner = () => {
 			<div className="bg-no-repeat  max-w-3xl bg-left-center mt-0 bg-left bg-contain mx-auto w-full lg:w-full md:bg-elipse md:-ml-20 md:bg-50%">
 				<div className="items-center mx-auto flex flex-col flex-row md:ml-10 lg:items-start lg:ml-20">
 					<div className="">
-						<p className="text-white text mb-2 lg:text-1xl xl:text-3xl ">Hello, i am</p>
-						<h1 className=" text-white text -mt-4 font-bold text-7xl xl:text-9xl">
+						<p className="text-white ml-1 text mb-2 lg:text-1xl xl:text-3xl ">Hello, i am</p>
+						<h1 className=" text-white text -mt-2 font-bold text-7xl xl:text-9xl">
 							Mark
 							<br />Reccardo
 						</h1>
@@ -21,23 +22,11 @@ export const Baner = () => {
 
 						<p className="text-white  text text-xl">Find Me on</p>
 						<div className="pb-2 pt-1 pl-0.5  gap-x-4 flex">
-							{/* TODO: Move to config */}
-							<Link to="#" className="text-icon ">
-								<FaBehance />
-							</Link>
-							<Link to="#" className="text-icon">
-								<FaDribbble />
-							</Link>
-							<Link to="#" className="text-icon">
-								<FaInstagram />
-							</Link>
-							<Link to="#" className="text-icon">
-								<FaLinkedin />
-							</Link>
-							<Link to="#" className="text-icon">
-								<FaPinterest />
-							</Link>
-							{/* TODO: Move to config */}
+							{socialMedia.map((item) => (
+								<a className="text-icon" href={item.link}>
+									<i className={item.icon} />
+								</a>
+							))}
 						</div>
 						<div className="py-4 mt-2 flex gap-x-4">
 							<Link to="#" className="btn btn--red btn--rounded">

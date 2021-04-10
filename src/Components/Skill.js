@@ -1,7 +1,6 @@
 import React from 'react';
 
 export const Skill = ({ skill }) => {
-	console.log('skill', skill);
 	return (
 		<React.Fragment>
 			{[ skill ].map((item) => (

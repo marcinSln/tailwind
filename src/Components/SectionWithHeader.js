@@ -14,7 +14,7 @@ export const SectionWithHeader = ({ content, className, headerLine }) => {
 					<p className="section-text">{item.text}</p>
 					<Link
 						to="#"
-						className="btn btn--transparent btn--rounded mr-auto ml-auto md:inline-block md:w-auto md:text-left"
+						className="btn btn--transparent btn--rounded  mt-4 mr-auto ml-auto md:inline-block md:w-auto md:text-left"
 					>
 						{item.textonButton}
 					</Link>
