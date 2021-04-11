@@ -47,7 +47,7 @@ export class Header extends Component {
 					<div className="header__hambuger-menu " onClick={(e) => this.handleOpen(e)}>
 						{isOpen ? <FaTimes /> : <FaBars />}
 					</div>
-					<div className={`header__menu ${this.state.isOpen ? 'header__menu--open' : 'hidden'} `}>
+					<div className={`header__menu ${isOpen ? 'header__menu--open' : 'hidden md:visible'} `}>
 						{HeaderLinks.map((item) => <LinkItem name={item.text} scrollTo={item.link} />)}
 						<div className="h-10 z-10 flex items-center mt-2 xl:mt-9 lg:h-12 lg:mt-10">
 							<Link to="#" className="btn btn--small  btn--transparent ml-1">
