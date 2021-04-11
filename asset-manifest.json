@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/tailwind/static/css/main.3490ece2.chunk.css",
-    "main.js": "/tailwind/static/js/main.1cd57582.chunk.js",
-    "main.js.map": "/tailwind/static/js/main.1cd57582.chunk.js.map",
+    "main.css": "/tailwind/static/css/main.07ede27c.chunk.css",
+    "main.js": "/tailwind/static/js/main.2b818b4f.chunk.js",
+    "main.js.map": "/tailwind/static/js/main.2b818b4f.chunk.js.map",
     "runtime-main.js": "/tailwind/static/js/runtime-main.8049b8b5.js",
     "runtime-main.js.map": "/tailwind/static/js/runtime-main.8049b8b5.js.map",
     "static/css/2.372cd6d9.chunk.css": "/tailwind/static/css/2.372cd6d9.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.7514b619.chunk.js.map": "/tailwind/static/js/3.7514b619.chunk.js.map",
     "index.html": "/tailwind/index.html",
     "static/css/2.372cd6d9.chunk.css.map": "/tailwind/static/css/2.372cd6d9.chunk.css.map",
-    "static/css/main.3490ece2.chunk.css.map": "/tailwind/static/css/main.3490ece2.chunk.css.map",
+    "static/css/main.07ede27c.chunk.css.map": "/tailwind/static/css/main.07ede27c.chunk.css.map",
     "static/js/2.c3730778.chunk.js.LICENSE.txt": "/tailwind/static/js/2.c3730778.chunk.js.LICENSE.txt",
     "static/media/Component 2 – 1.jpg": "/tailwind/static/media/Component 2 – 1.7a43f616.jpg",
     "static/media/App.css": "/tailwind/static/media/Poppins-SemiBold.cce5625b.ttf",
@@ -38,7 +38,7 @@
     "static/js/runtime-main.8049b8b5.js",
     "static/css/2.372cd6d9.chunk.css",
     "static/js/2.c3730778.chunk.js",
-    "static/css/main.3490ece2.chunk.css",
-    "static/js/main.1cd57582.chunk.js"
+    "static/css/main.07ede27c.chunk.css",
+    "static/js/main.2b818b4f.chunk.js"
   ]
 }
