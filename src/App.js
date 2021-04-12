@@ -75,7 +75,9 @@ export default function App() {
 						<TextHeader text={sectionMyCababilities.header} lineType="underline" />
 						<Text className="text__section lg:text-3xl" text={sectionMyCababilities.text} />
 						<Section className="skill__content">
-							{skills.map((skill) => <Skill key={uuid()} skill={skill} />)}
+							{skills.map((skill, index) => (
+								<Skill key={uuid()} effect="zoom-out" offset="500" delay={index * 500} skill={skill} />
+							))}
 						</Section>
 					</Wrapper>
 				</Section>

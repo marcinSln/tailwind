@@ -14,6 +14,9 @@ export default function TabContent({ children }) {
 				>
 					{item.items.map((el, index) => (
 						<div
+							data-aos="zoom-in"
+							data-aos-offset="150"
+							data-aos-delay={index * 400}
 							key={uuid()}
 							className={`relative group animate-wiggle delay-${(index + 1) *
 								200} cursor-pointer transition-all duration-300`}
