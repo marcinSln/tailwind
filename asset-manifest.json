@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/tailwind/static/css/main.1219c77d.chunk.css",
-    "main.js": "/tailwind/static/js/main.c2d07507.chunk.js",
-    "main.js.map": "/tailwind/static/js/main.c2d07507.chunk.js.map",
+    "main.js": "/tailwind/static/js/main.8fe1a123.chunk.js",
+    "main.js.map": "/tailwind/static/js/main.8fe1a123.chunk.js.map",
     "runtime-main.js": "/tailwind/static/js/runtime-main.86bbb96d.js",
     "runtime-main.js.map": "/tailwind/static/js/runtime-main.86bbb96d.js.map",
-    "static/css/2.372cd6d9.chunk.css": "/tailwind/static/css/2.372cd6d9.chunk.css",
-    "static/js/2.39ca3219.chunk.js": "/tailwind/static/js/2.39ca3219.chunk.js",
-    "static/js/2.39ca3219.chunk.js.map": "/tailwind/static/js/2.39ca3219.chunk.js.map",
+    "static/css/2.df2d5a28.chunk.css": "/tailwind/static/css/2.df2d5a28.chunk.css",
+    "static/js/2.0df8b2f5.chunk.js": "/tailwind/static/js/2.0df8b2f5.chunk.js",
+    "static/js/2.0df8b2f5.chunk.js.map": "/tailwind/static/js/2.0df8b2f5.chunk.js.map",
     "static/js/3.c2718f89.chunk.js": "/tailwind/static/js/3.c2718f89.chunk.js",
     "static/js/3.c2718f89.chunk.js.map": "/tailwind/static/js/3.c2718f89.chunk.js.map",
     "index.html": "/tailwind/index.html",
-    "static/css/2.372cd6d9.chunk.css.map": "/tailwind/static/css/2.372cd6d9.chunk.css.map",
+    "static/css/2.df2d5a28.chunk.css.map": "/tailwind/static/css/2.df2d5a28.chunk.css.map",
     "static/css/main.1219c77d.chunk.css.map": "/tailwind/static/css/main.1219c77d.chunk.css.map",
-    "static/js/2.39ca3219.chunk.js.LICENSE.txt": "/tailwind/static/js/2.39ca3219.chunk.js.LICENSE.txt",
+    "static/js/2.0df8b2f5.chunk.js.LICENSE.txt": "/tailwind/static/js/2.0df8b2f5.chunk.js.LICENSE.txt",
     "static/media/Component 2 – 1.jpg": "/tailwind/static/media/Component 2 – 1.7a43f616.jpg",
     "static/media/App.css": "/tailwind/static/media/Poppins-SemiBold.cce5625b.ttf",
     "static/media/Homepage.png": "/tailwind/static/media/Homepage.75bb6cf2.png",
@@ -34,15 +34,13 @@
     "static/media/tab4.jpg": "/tailwind/static/media/tab4.bb883a24.jpg",
     "static/media/tab5.jpg": "/tailwind/static/media/tab5.5530696a.jpg",
     "static/media/tab6.jpg": "/tailwind/static/media/tab6.469b29b1.jpg",
-    "static/media/tinified (1).zip": "/tailwind/static/media/tinified (1).fc954867.zip",
-    "static/media/tinified.zip": "/tailwind/static/media/tinified.63c56bdb.zip",
     "static/media/worldwide.svg": "/tailwind/static/media/worldwide.6b2aa93d.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.86bbb96d.js",
-    "static/css/2.372cd6d9.chunk.css",
-    "static/js/2.39ca3219.chunk.js",
+    "static/css/2.df2d5a28.chunk.css",
+    "static/js/2.0df8b2f5.chunk.js",
     "static/css/main.1219c77d.chunk.css",
-    "static/js/main.c2d07507.chunk.js"
+    "static/js/main.8fe1a123.chunk.js"
   ]
 }
