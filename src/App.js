@@ -15,6 +15,7 @@ import { FormHandler } from './Components/FormHandler';
 import { InputField } from './Components/InputField';
 import parse from 'html-react-parser';
 import { Link } from 'react-router-dom';
+import uuid from 'react-uuid';
 
 // config
 import {
@@ -30,7 +31,7 @@ import {
 } from './Config/Config';
 
 //images
-import aboutMeImg from './img/about.svg';
+import aboutMeImg from './img/about.png';
 import worldWide from './img/worldwide.svg';
 import LinkScroll from './Components/Menu/LinkScroll';
 import 'font-awesome/css/font-awesome.min.css';
@@ -71,7 +72,9 @@ export default function App() {
 					<Wrapper className="items-start">
 						<TextHeader text={sectionMyCababilities.header} lineType="underline" />
 						<Text className="text__section lg:text-3xl" text={sectionMyCababilities.text} />
-						<Section className="skill__content">{skills.map((skill) => <Skill skill={skill} />)}</Section>
+						<Section className="skill__content">
+							{skills.map((skill) => <Skill key={uuid()} skill={skill} />)}
+						</Section>
 					</Wrapper>
 				</Section>
 				<Section className="bg-darkBlue  pt-12 pb-12 md:pt-24 md:pb-52">
@@ -124,19 +127,24 @@ export default function App() {
 						/>
 						<div className="pt-6 xs:pt-2 row flex divide-x-2 divide-white justify-center py-2 pt-3 md:pt-6">
 							{footerLink.map((link) => (
-								<LinkScroll scrollTo={link.scrollTo} name={link.text} className={link.className} />
+								<LinkScroll
+									scrollTo={link.scrollTo}
+									name={link.text}
+									key={uuid()}
+									className={link.className}
+								/>
 							))}
 						</div>
 						<div className="footer__content ">
 							{footerText.map((item) => (
-								<a className={item.className} href={item.link}>
+								<a className={item.className} key={uuid()} href={item.link}>
 									{item.text}
 								</a>
 							))}
 						</div>
 						<div className="py-4 gap-x-4 flex justify-center">
 							{socialMedia.map((item) => (
-								<a className="text-icon" href={item.link}>
+								<a className="text-icon" key={uuid()} href={item.link}>
 									<i className={item.icon} />
 								</a>
 							))}

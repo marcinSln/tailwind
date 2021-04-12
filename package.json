@@ -24,6 +24,7 @@
 		"react-icons": "^4.2.0",
 		"react-router-dom": "^5.2.0",
 		"react-scripts": "4.0.2",
+		"react-uuid": "^1.0.2",
 		"web-vitals": "^1.1.0"
 	},
 	"scripts": {
@@ -35,11 +36,22 @@
 		"deploy": "gh-pages -d build"
 	},
 	"eslintConfig": {
-		"extends": [ "react-app", "react-app/jest" ]
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
 	},
 	"browserslist": {
-		"production": [ ">0.2%", "not dead", "not op_mini all" ],
-		"development": [ "last 1 chrome version", "last 1 firefox version", "last 1 safari version" ]
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
 	},
 	"devDependencies": {
 		"@tailwindcss/postcss7-compat": "^2.0.3",

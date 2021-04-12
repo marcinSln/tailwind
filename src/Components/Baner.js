@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import PersonImage from '../img/img.svg';
+import PersonImage from '../img/img.png';
 import { socialMedia, baner } from '../Config/Config';
 import parse from 'html-react-parser';
+import uuid from 'react-uuid';
 
 export const Baner = () => {
 	const buttons = baner.buttons.map((item) => (
-		<Link to={item.link} className={item.className}>
+		<Link to={item.link} className={item.className} key={uuid()}>
 			{item.text}
 		</Link>
 	));
@@ -22,7 +23,7 @@ export const Baner = () => {
 						<p className="text-white  text text-xl">{baner.socialMediaHeader}</p>
 						<div className="pb-2 pt-1 pl-0.5  gap-x-4 flex">
 							{socialMedia.map((item) => (
-								<a className="text-icon" href={item.link}>
+								<a className="text-icon" href={item.link} key={uuid()}>
 									<i className={item.icon} />
 								</a>
 							))}

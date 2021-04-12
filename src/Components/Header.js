@@ -3,6 +3,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import React, { Component } from 'react';
 import LinkItem from './Menu/LinkItem';
 import { HeaderLinks } from '../Config/Config';
+import uuid from 'react-uuid';
 
 export class Header extends Component {
 	constructor(props) {
@@ -48,7 +49,9 @@ export class Header extends Component {
 						{isOpen ? <FaTimes /> : <FaBars />}
 					</div>
 					<div className={`header__menu ${isOpen ? 'header__menu--open' : 'hidden md:visible'} `}>
-						{HeaderLinks.map((item) => <LinkItem name={item.text} scrollTo={item.link} />)}
+						{HeaderLinks.map((item) => (
+							<LinkItem name={item.text} key={uuid()} scrollTo={item.link ? item.link : '/'} />
+						))}
 						<div className="h-10 z-10 flex items-center mt-2 xl:mt-9 lg:h-12 lg:mt-10">
 							<Link to="#" className="btn btn--small  btn--transparent ml-1">
 								Get started

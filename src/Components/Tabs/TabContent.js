@@ -1,4 +1,5 @@
 import React from 'react';
+import uuid from 'react-uuid';
 
 export default function TabContent({ children }) {
 	return (
@@ -9,10 +10,11 @@ export default function TabContent({ children }) {
 					true
 						? 'block opacity-100'
 						: 'hidden opacity-0'}`}
-					key={item.name}
+					key={uuid()}
 				>
 					{item.items.map((el, index) => (
 						<div
+							key={uuid()}
 							className={`relative group animate-wiggle delay-${(index + 1) *
 								200} cursor-pointer transition-all duration-300`}
 						>
