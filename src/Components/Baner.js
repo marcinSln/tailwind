@@ -27,7 +27,10 @@ export const Baner = () => {
 								</a>
 							))}
 						</div>
-						<div className="py-4 mt-2 flex gap-x-4"> {buttons}</div>
+						<div className="py-4 mt-2 flex flex-col gap-y-2 xs:gap-y-0 xs:flex-row xs:gap-x-4">
+							{' '}
+							{buttons}
+						</div>
 					</div>
 				</div>
 			</div>

@@ -15,6 +15,14 @@ module.exports = {
 			yellow: colors.amber,
 			warning: colors.red
 		},
+		divideWidth: {
+			DEFAULT: '1px',
+			'0': '0',
+			'2': '2px',
+			'3': '3px',
+			'4': '4px',
+			'6': '6px'
+		},
 		borderWidth: {
 			'1': '1px',
 			'2': '2px',
@@ -31,7 +39,7 @@ module.exports = {
 			'16': '4rem'
 		},
 		screens: {
-			xs: '500px',
+			xs: '450px',
 			...defaultTheme.screens
 		},
 		extend: {

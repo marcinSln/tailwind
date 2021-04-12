@@ -84,14 +84,12 @@ export const baner = {
 	]
 };
 
-export const sectionLetsMakeSomething = [
-	{
-		header: 'Let’s Make Something </br> Great Together',
-		text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+export const sectionLetsMakeSomething = {
+	header: 'Let’s Make Something </br> Great Together',
+	text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
 			   sed do eiusmod tempor incididunt ut labore et t enim ad minim veniam, 
 			   quis nostrud exercitation.`
-	}
-];
+};
 
 export const footerLink = [
 	{ text: 'About', className: 'footer__text', scrollTo: '#About' },

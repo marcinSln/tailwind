@@ -4,7 +4,7 @@ export function InputField({ options, typeOfElement = 'input', type = 'text', na
 	return typeOfElement === 'input' ? (
 		<input name={name} className="input" type={type} placeholder={name} />
 	) : typeOfElement === 'select' ? (
-		<select className="inputtext-gray " name={name}>
+		<select className="input bg-white text-gray " name={name}>
 			{options.map((item) => {
 				{
 					return (
@@ -16,6 +16,6 @@ export function InputField({ options, typeOfElement = 'input', type = 'text', na
 			})}
 		</select>
 	) : typeOfElement === 'textarea' ? (
-		<textarea name={name} className="my-6 input w-full" placeholder={name} rows="10" />
+		<textarea name={name} className="my-4 md:my-6 input w-full" placeholder={name} rows="10" />
 	) : null;
 }

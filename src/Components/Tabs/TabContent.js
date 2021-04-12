@@ -5,7 +5,7 @@ export default function TabContent({ children }) {
 		<React.Fragment>
 			{children.map((item) => (
 				<span
-					className={`grid transition-opacity delay-100 ease-in-out duration-300 gap-x-6  gap-y-6 xs:grid-cols-2  md:grid-cols-3 lg:grid-cols-4  ${item.isActive ==
+					className={`grid transition-opacity delay-100 ease-in-out duration-300 gap-x-6  gap-y-6 xs:grid-cols-2  md:grid-cols-3 lg:grid-cols-4  2xl:grid-cols-5 ${item.isActive ==
 					true
 						? 'block opacity-100'
 						: 'hidden opacity-0'}`}

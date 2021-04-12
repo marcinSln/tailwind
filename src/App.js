@@ -41,26 +41,26 @@ export default function App() {
 			<div className="bg-navyBlue  min-h-screen">
 				<Header />
 				<Baner />
-				<Section className="bg-darkBlue pt-20 pb-16 lg:pt-48 lg:pb-36" target="#About">
+				<Section className="bg-darkBlue pt-20 pb-16 md:pt-24 md:pb-24 2xl:pt-48 lg:pb-36" target="#About">
 					<Wrapper isRow="true" className="items-start flex-wrap md:flex-nowrap">
 						<SectionWithHeader
 							content={textInSectionAboutMe}
 							buttonType="transparent"
 							headerLine="right"
-							className="w-full mb-10 md:w-6/12 xl:w-1/2 md:mb-0"
+							className="w-full mb-10 -mr-5  md:w-6/12 xl:w-1/2 md:mb-0 md:mr-16"
 						/>
 						<ImageWithBorder
 							image={aboutMeImg}
-							className="bg-navyBlue max-w-3xl py-8 px-5 lg:py-20 lg:px-16"
+							className="bg-navyBlue max-w-3xl py-8 px-5 2xl:py-20 2xl:px-16"
 						/>
 					</Wrapper>
 				</Section>
 				<Section className="bg-darkBlue pt-8  pb-24 lg:pt-8 lg:pb-32 " target="#Portfolio">
 					<Wrapper isRow="false" className="items-start flex-wrap">
 						<div className="w-full  md:w-6/12 md:w-auto">
-							<h2 className="font-bold text-center text-white text-4xl lg:text-6xl md:text-left relative">
+							<h2 className="font-bold inline-block relative text-center text-white text-4xl lg:text-6xl md:text-left relative">
 								Portfolio
-								<span className="horizontal-line" />
+								<span className="horizontal-line horizontal-line--left" />
 							</h2>
 						</div>
 						<div className="w-6/12 w-auto" />
@@ -102,8 +102,8 @@ export default function App() {
 							className="text__section lg:text-xl md:text-center max-w-4xl"
 							text={sectionLetsMakeSomething.text}
 						/>
-						<FormHandler className="max-w-6xl mx-auto text-center">
-							<div className="gap-y-6 grid-cols-1 grid md:grid-cols-2 md:gap-x-6">
+						<FormHandler className="mt-4 xs:mt-0 max-w-6xl mx-auto text-center">
+							<div className="gap-y-4 grid-cols-1 grid md:grid-cols-2 md:gap-x-6 md:gap-y-6">
 								<InputField typeOfElement="input" type="text" name="Name" />
 								<InputField typeOfElement="input" type="email" name="Email" />
 								<InputField typeOfElement="input" type="phone" name="Phone#" />
@@ -116,13 +116,18 @@ export default function App() {
 				</Section>
 				<Section className="pb-12 bg-darkBlue md:pb-24">
 					<Wrapper>
-						<TextHeader text="Portfolio" lineType="vertical-above" spaceBetween="mb-14" />
-						<div className="row flex divide-x-2 divide-white justify-center py-2 pt-3 md:pt-6">
+						<TextHeader
+							text="Portfolio"
+							className="header__logo"
+							lineType="vertical-above"
+							spaceBetween="mb-14"
+						/>
+						<div className="pt-6 xs:pt-2 row flex divide-x-2 divide-white justify-center py-2 pt-3 md:pt-6">
 							{footerLink.map((link) => (
 								<LinkScroll scrollTo={link.scrollTo} name={link.text} className={link.className} />
 							))}
 						</div>
-						<div className="footer__content">
+						<div className="footer__content ">
 							{footerText.map((item) => (
 								<a className={item.className} href={item.link}>
 									{item.text}
