@@ -1,9 +1,9 @@
-import tab1 from '../img/tab1.png';
-import tab2 from '../img/tab2.png';
-import tab3 from '../img/tab3.png';
-import tab4 from '../img/tab4.png';
-import tab5 from '../img/tab5.png';
-import tab6 from '../img/tab6.png';
+import tab1 from '../img/tab1.jpg';
+import tab2 from '../img/tab2.jpg';
+import tab3 from '../img/tab3.jpg';
+import tab4 from '../img/tab4.jpg';
+import tab5 from '../img/tab5.jpg';
+import tab6 from '../img/tab6.jpg';
 
 export const tabsHeader = [
 	{ name: 'All', isActive: true },

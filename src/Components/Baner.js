@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import PersonImage from '../img/img.png';
+import PersonImage from '../img/img.jpg';
+import PersonImage_mobile from '../img/img_mobile.jpeg';
 import { socialMedia, baner } from '../Config/Config';
 import parse from 'html-react-parser';
 import uuid from 'react-uuid';
@@ -37,7 +38,11 @@ export const Baner = () => {
 			</div>
 			<div className="baner__side--bigger">
 				<div>
-					<img src={PersonImage} alt="Baner" />
+					<picture>
+						<source media="(max-width: 500px)" srcset={PersonImage_mobile} />
+						<source media="(min-width: 500px)" srcset={PersonImage} />
+						<img src={PersonImage} className="text-center mx-auto" alt="Baner" />
+					</picture>
 				</div>
 			</div>
 		</div>

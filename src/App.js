@@ -31,7 +31,8 @@ import {
 } from './Config/Config';
 
 //images
-import aboutMeImg from './img/about.png';
+import aboutMeImg from './img/about.jpg';
+import aboutMeImg_mobile from './img/about_mobile.jpeg';
 import worldWide from './img/worldwide.svg';
 import LinkScroll from './Components/Menu/LinkScroll';
 import 'font-awesome/css/font-awesome.min.css';
@@ -52,6 +53,7 @@ export default function App() {
 						/>
 						<ImageWithBorder
 							image={aboutMeImg}
+							image_mobile={aboutMeImg_mobile}
 							className="bg-navyBlue max-w-3xl py-8 px-5 2xl:py-20 2xl:px-16"
 						/>
 					</Wrapper>
