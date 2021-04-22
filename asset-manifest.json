@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/tailwind/static/css/main.1219c77d.chunk.css",
-    "main.js": "/tailwind/static/js/main.31e5d398.chunk.js",
-    "main.js.map": "/tailwind/static/js/main.31e5d398.chunk.js.map",
+    "main.js": "/tailwind/static/js/main.8178521c.chunk.js",
+    "main.js.map": "/tailwind/static/js/main.8178521c.chunk.js.map",
     "runtime-main.js": "/tailwind/static/js/runtime-main.86bbb96d.js",
     "runtime-main.js.map": "/tailwind/static/js/runtime-main.86bbb96d.js.map",
     "static/css/2.df2d5a28.chunk.css": "/tailwind/static/css/2.df2d5a28.chunk.css",
@@ -11,6 +11,8 @@
     "static/js/3.c2718f89.chunk.js": "/tailwind/static/js/3.c2718f89.chunk.js",
     "static/js/3.c2718f89.chunk.js.map": "/tailwind/static/js/3.c2718f89.chunk.js.map",
     "index.html": "/tailwind/index.html",
+    "service-worker.js": "/tailwind/service-worker.js",
+    "service-worker.js.map": "/tailwind/service-worker.js.map",
     "static/css/2.df2d5a28.chunk.css.map": "/tailwind/static/css/2.df2d5a28.chunk.css.map",
     "static/css/main.1219c77d.chunk.css.map": "/tailwind/static/css/main.1219c77d.chunk.css.map",
     "static/js/2.0df8b2f5.chunk.js.LICENSE.txt": "/tailwind/static/js/2.0df8b2f5.chunk.js.LICENSE.txt",
@@ -41,6 +43,6 @@
     "static/css/2.df2d5a28.chunk.css",
     "static/js/2.0df8b2f5.chunk.js",
     "static/css/main.1219c77d.chunk.css",
-    "static/js/main.31e5d398.chunk.js"
+    "static/js/main.8178521c.chunk.js"
   ]
 }

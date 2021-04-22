@@ -1,9 +1,9 @@
 {
 	"theme_color": "#050222",
 	"background_color": "#324C99",
-	"display": "standalone",
-	"scope": "/",
 	"start_url": "/",
+	"display": "standalone",
+	"orientation": "portrait",
 	"name": "WebPage",
 	"short_name": "Landing Page",
 	"icons": [
