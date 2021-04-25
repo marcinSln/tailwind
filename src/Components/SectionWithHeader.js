@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import LinkScroll from './Menu/LinkScroll';
 
 export const SectionWithHeader = ({ content, className, headerLine }) => {
 	return (
@@ -12,12 +13,11 @@ export const SectionWithHeader = ({ content, className, headerLine }) => {
 					</h2>
 					<p className="section-text">{item.introduction}</p>
 					<p className="section-text">{item.text}</p>
-					<Link
-						to="#"
+					<LinkScroll
+						scrollTo={item.scrollTo ? item.scrollTo : '#'}
+						name={item.textButton}
 						className="btn btn--transparent btn--rounded  mt-4 mr-auto ml-auto md:inline-block md:w-auto md:text-left"
-					>
-						{item.textonButton}
-					</Link>
+					/>
 				</React.Fragment>
 			))}
 		</div>

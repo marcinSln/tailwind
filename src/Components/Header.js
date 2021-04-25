@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import LinkItem from './Menu/LinkItem';
 import { HeaderLinks } from '../Config/Config';
 import uuid from 'react-uuid';
+import LinkScroll from './Menu/LinkScroll';
 
 export class Header extends Component {
 	constructor(props) {
@@ -43,19 +44,26 @@ export class Header extends Component {
 			<div className={`header ${isSticky ? 'bg-blur bg-blue-sticky' : ''}`} data-sticky-element="true">
 				<div className={`header__container ${isSticky ? 'sticky-header' : null}`}>
 					<div className="flex-1  flex xl:flex-1 md:flex-none">
-						<h1 className={`header__logo  ${isSticky ? 'text-4xl' : null}`}>Portfolio</h1>
+						<LinkScroll
+							scrollTo="#Home"
+							name="Portfolio"
+							key={uuid()}
+							className={`header__logo  ${isSticky ? 'text-4xl' : null}`}
+						/>
 					</div>
 					<div className="header__hambuger-menu " onClick={(e) => this.handleOpen(e)}>
 						{isOpen ? <FaTimes /> : <FaBars />}
 					</div>
 					<div className={`header__menu ${isOpen ? 'header__menu--open' : 'hidden md:visible'} `}>
 						{HeaderLinks.map((item) => (
-							<LinkItem name={item.text} key={uuid()} scrollTo={item.link ? item.link : '/'} />
+							<LinkItem name={item.text} key={uuid()} scrollTo={item.scrollTo ? item.scrollTo : '/'} />
 						))}
 						<div className="h-10 z-10 flex items-center mt-2 xl:mt-9 lg:h-12 lg:mt-10">
-							<Link to="#" className="btn btn--small  btn--transparent ml-1">
-								Get started
-							</Link>
+							<LinkScroll
+								name="Get started"
+								scrollTo={'#About'}
+								className="btn btn--small  btn--transparent ml-1"
+							/>
 						</div>
 					</div>
 				</div>

@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 
 const LinkScroll = ({ scrollTo, name, className }) => {
 	const scrollToSection = (e) => {
-		let targetLink = e.target.getAttribute('href').substr(1);
+		let targetLink = e.target.getAttribute('data-scroll-to');
 		let targetScroll = document.querySelector(`[target-scroll="${targetLink}"]`);
 		let top = document.querySelector('[data-sticky-element]').offsetHeight;
-
+		console.log('targetScroll', targetScroll);
+		console.log('top', top);
 		window.scrollTo({
 			top: targetScroll.offsetTop - top,
 			behavior: 'smooth'
@@ -14,7 +15,12 @@ const LinkScroll = ({ scrollTo, name, className }) => {
 	};
 
 	return (
-		<Link className={className ? className : null} to={scrollTo} onClick={scrollToSection.bind(this)}>
+		<Link
+			className={className ? className : null}
+			to="#"
+			data-scroll-to={scrollTo}
+			onClick={scrollToSection.bind(this)}
+		>
 			{name}
 		</Link>
 	);

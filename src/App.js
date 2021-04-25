@@ -40,7 +40,7 @@ import 'font-awesome/css/font-awesome.min.css';
 export default function App() {
 	return (
 		<BrowserRouter>
-			<div className="bg-navyBlue  min-h-screen">
+			<div className="bg-navyBlue  min-h-screen" target-scroll="#Home">
 				<Header />
 				<Baner />
 				<Section className="bg-darkBlue pt-20 pb-16 md:pt-24 md:pb-24 2xl:pt-48 lg:pb-36" target="#About">
@@ -67,7 +67,7 @@ export default function App() {
 							</h2>
 						</div>
 						<div className="w-6/12 w-auto" />
-						<TabsContainer />
+						<TabsContainer isScroll="true" />
 					</Wrapper>
 				</Section>
 				<Section className="pt-12 pb-24 md:pt-24 md:pb-52">

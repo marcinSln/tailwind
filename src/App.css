@@ -166,7 +166,7 @@
 }
 
 .sticky-header {
-	@apply transform scale-75 origin-center;
+	@apply transform scale-75 origin-center scale-x-87;
 }
 
 .skill__content {
@@ -191,4 +191,20 @@
 
 .text__section {
 	@apply font-light text-base text-center py-3 md:py-6 md:text-center max-w-4xl mx-auto text-white leading-loose font-light;
+}
+
+.toastr--error {
+	@apply bg-red rounded-lg;
+}
+
+.toastr--success {
+	@apply bg-green rounded-lg;
+}
+
+.toastr__content {
+	@apply text-center text-sm md:text-right;
+}
+
+.toastr {
+	@apply fixed top-22 right-3 w-40 transition-all duration-300 ease-in-out py-1 px-3 z-50 text-white;
 }

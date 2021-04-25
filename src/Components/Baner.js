@@ -6,13 +6,12 @@ import { socialMedia, baner } from '../Config/Config';
 import parse from 'html-react-parser';
 import uuid from 'react-uuid';
 import AOS from 'aos';
+import LinkScroll from './Menu/LinkScroll';
 import 'aos/dist/aos.css';
 
 export const Baner = () => {
 	const buttons = baner.buttons.map((item) => (
-		<Link to={item.link} className={item.className} key={uuid()}>
-			{item.text}
-		</Link>
+		<LinkScroll name={item.text} scrollTo={item.link} key={uuid()} className={item.className} />
 	));
 
 	useEffect(() => {
@@ -53,8 +52,8 @@ export const Baner = () => {
 			<div className="baner__side--bigger">
 				<div>
 					<picture>
-						<source media="(max-width: 500px)" srcset={PersonImage_mobile} />
-						<source media="(min-width: 500px)" srcset={PersonImage} />
+						<source media="(max-width: 500px)" srcSet={PersonImage_mobile} />
+						<source media="(min-width: 500px)" srcSet={PersonImage} />
 						<img
 							src={PersonImage}
 							className="text-center mx-auto"

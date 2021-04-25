@@ -54,7 +54,8 @@ export const textInSectionAboutMe = [
 					ad minim veniam, quis nostrud exercitation ullamco laboris 
 					nisi ut aliquip ex ea commodo consequat`,
 		text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-		textonButton: 'Download  CV'
+		textButton: 'Contact with me',
+		scrollTo: '#Contact'
 	}
 ];
 
@@ -79,8 +80,8 @@ export const baner = {
 	socialMediaHeader: 'Find Me on',
 	text: 'A young <span class="text-red text text-xl">UI/UX</span> designer with crazy for mobile & web design.',
 	buttons: [
-		{ text: 'Hire me', className: 'btn btn--red btn--rounded', link: '#' },
-		{ text: 'Portfolio', className: 'btn btn--transparent', link: '#' }
+		{ text: 'Hire me', className: 'btn btn--red btn--rounded', link: '#Contact' },
+		{ text: 'Portfolio', className: 'btn btn--transparent', link: '#Portfolio' }
 	]
 };
 
@@ -94,13 +95,13 @@ export const sectionLetsMakeSomething = {
 export const footerLink = [
 	{ text: 'About', className: 'footer__text', scrollTo: '#About' },
 	{ text: 'Portfolio', className: 'footer__text', scrollTo: '#Portfolio' },
-	{ text: 'Kontakt', className: 'footer__text', scrollTo: '#Kontakt' }
+	{ text: 'Kontakt', className: 'footer__text', scrollTo: '#Contact' }
 ];
 
 export const HeaderLinks = [
 	{ text: 'About', className: 'footer__text', scrollTo: '#About' },
 	{ text: 'Portfolio', className: 'footer__text', scrollTo: '#Portfolio' },
-	{ text: 'Kontakt', className: 'footer__text', scrollTo: '#Kontakt' }
+	{ text: 'Kontakt', className: 'footer__text', scrollTo: '#Contact' }
 ];
 
 export const footerText = [
@@ -118,32 +119,27 @@ export const socialMedia = [
 
 export const skills = [
 	{
-		header: 'Web',
+		header: 'JavaScript',
 		text: 'Get awesome design services from inkyy.com ',
 		image: 'item.svg'
 	},
 	{
-		header: 'JavasScript',
+		header: 'CSS3',
 		text: 'Get awesome design services from inkyy.com ',
 		image: 'item.svg'
 	},
 	{
-		header: 'Web Design',
+		header: 'JQuery',
 		text: 'Get awesome design services from inkyy.com ',
 		image: 'item.svg'
 	},
 	{
-		header: 'Web Design',
+		header: 'React',
 		text: 'Get awesome design services from inkyy.com ',
 		image: 'item.svg'
 	},
 	{
-		header: 'Web Design',
-		text: 'Get awesome design services from inkyy.com ',
-		image: 'item.svg'
-	},
-	{
-		header: 'Web Design',
+		header: 'React Native',
 		text: 'Get awesome design services from inkyy.com ',
 		image: 'item.svg'
 	}
