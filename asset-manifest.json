@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/tailwind/static/css/main.1219c77d.chunk.css",
-    "main.js": "/tailwind/static/js/main.8178521c.chunk.js",
-    "main.js.map": "/tailwind/static/js/main.8178521c.chunk.js.map",
-    "runtime-main.js": "/tailwind/static/js/runtime-main.86bbb96d.js",
-    "runtime-main.js.map": "/tailwind/static/js/runtime-main.86bbb96d.js.map",
+    "main.css": "/tailwind/static/css/main.d8c55c08.chunk.css",
+    "main.js": "/tailwind/static/js/main.61098b17.chunk.js",
+    "main.js.map": "/tailwind/static/js/main.61098b17.chunk.js.map",
+    "runtime-main.js": "/tailwind/static/js/runtime-main.044abe19.js",
+    "runtime-main.js.map": "/tailwind/static/js/runtime-main.044abe19.js.map",
     "static/css/2.df2d5a28.chunk.css": "/tailwind/static/css/2.df2d5a28.chunk.css",
-    "static/js/2.0df8b2f5.chunk.js": "/tailwind/static/js/2.0df8b2f5.chunk.js",
-    "static/js/2.0df8b2f5.chunk.js.map": "/tailwind/static/js/2.0df8b2f5.chunk.js.map",
-    "static/js/3.c2718f89.chunk.js": "/tailwind/static/js/3.c2718f89.chunk.js",
-    "static/js/3.c2718f89.chunk.js.map": "/tailwind/static/js/3.c2718f89.chunk.js.map",
+    "static/js/2.b6554b70.chunk.js": "/tailwind/static/js/2.b6554b70.chunk.js",
+    "static/js/2.b6554b70.chunk.js.map": "/tailwind/static/js/2.b6554b70.chunk.js.map",
+    "static/js/3.94df58d6.chunk.js": "/tailwind/static/js/3.94df58d6.chunk.js",
+    "static/js/3.94df58d6.chunk.js.map": "/tailwind/static/js/3.94df58d6.chunk.js.map",
     "index.html": "/tailwind/index.html",
     "service-worker.js": "/tailwind/service-worker.js",
     "service-worker.js.map": "/tailwind/service-worker.js.map",
     "static/css/2.df2d5a28.chunk.css.map": "/tailwind/static/css/2.df2d5a28.chunk.css.map",
-    "static/css/main.1219c77d.chunk.css.map": "/tailwind/static/css/main.1219c77d.chunk.css.map",
-    "static/js/2.0df8b2f5.chunk.js.LICENSE.txt": "/tailwind/static/js/2.0df8b2f5.chunk.js.LICENSE.txt",
+    "static/css/main.d8c55c08.chunk.css.map": "/tailwind/static/css/main.d8c55c08.chunk.css.map",
+    "static/js/2.b6554b70.chunk.js.LICENSE.txt": "/tailwind/static/js/2.b6554b70.chunk.js.LICENSE.txt",
     "static/media/Component 2 – 1.jpg": "/tailwind/static/media/Component 2 – 1.7a43f616.jpg",
     "static/media/App.css": "/tailwind/static/media/Poppins-SemiBold.cce5625b.ttf",
     "static/media/Homepage.png": "/tailwind/static/media/Homepage.75bb6cf2.png",
@@ -39,10 +39,10 @@
     "static/media/worldwide.svg": "/tailwind/static/media/worldwide.6b2aa93d.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.86bbb96d.js",
+    "static/js/runtime-main.044abe19.js",
     "static/css/2.df2d5a28.chunk.css",
-    "static/js/2.0df8b2f5.chunk.js",
-    "static/css/main.1219c77d.chunk.css",
-    "static/js/main.8178521c.chunk.js"
+    "static/js/2.b6554b70.chunk.js",
+    "static/css/main.d8c55c08.chunk.css",
+    "static/js/main.61098b17.chunk.js"
   ]
 }
